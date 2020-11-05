@@ -1,0 +1,35 @@
+{
+"pub_info": [
+	{
+		"pub_id" : "0736",
+		"pr_info" : "This is sample text data for New Moon Books, publisher 0736 in the pubs database. New Moon Books is located in Boston, Massachusetts."
+	},
+	{
+		"pub_id" : "0877",
+		"pr_info" : "This is sample text data for Binnet & Hardley, publisher 0877 in the pubs database. Binnet & Hardley is located in Washington, D.C."
+	},
+	{
+		"pub_id" : "1389",
+		"pr_info" : "This is sample text data for Algodata Infosystems, publisher 1389 in the pubs database. Algodata Infosystems is located in Berkeley, California."
+	},
+	{
+		"pub_id" : "1622",
+		"pr_info" : "This is sample text data for Five Lakes Publishing, publisher 1622 in the pubs database. Five Lakes Publishing is located in Chicago, Illinois."
+	},
+	{
+		"pub_id" : "1756",
+		"pr_info" : "This is sample text data for Ramona Publishers, publisher 1756 in the pubs database. Ramona Publishers is located in Dallas, Texas."
+	},
+	{
+		"pub_id" : "9901",
+		"pr_info" : "This is sample text data for GGG&G, publisher 9901 in the pubs database. GGG&G is located in München, Germany."
+	},
+	{
+		"pub_id" : "9952",
+		"pr_info" : "This is sample text data for Scootney Books, publisher 9952 in the pubs database. Scootney Books is located in New York City, New York."
+	},
+	{
+		"pub_id" : "9999",
+		"pr_info" : "This is sample text data for Lucerne Publishing, publisher 9999 in the pubs database. Lucerne publishing is located in Paris, France."
+	}
+]}
