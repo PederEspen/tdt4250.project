@@ -3,4 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: tdt4250.project
 Bundle-SymbolicName: tdt4250.project; singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore
+Require-Bundle: org.eclipse.emf.ecore,
+ com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.6.2",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.6.2",
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.6.2"
