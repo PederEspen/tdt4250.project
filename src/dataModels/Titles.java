@@ -13,4 +13,5 @@ public class Titles {
 	public int ytd_sales;
 	public String notes;
 	public Date pubDate;
+	
 }
