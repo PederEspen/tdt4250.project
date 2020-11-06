@@ -1,8 +1,8 @@
 package dataModels;
 
-public class Publishers {
+public class Publisher {
 	public String pub_id;
-	public String pubname;
+	public String pub_name;
 	public String city;
 	public String state;
 	public String country;

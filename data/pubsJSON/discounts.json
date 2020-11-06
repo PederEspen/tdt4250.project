@@ -1,5 +1,4 @@
-{
-"discounts": [
+[
 	{
 		"discounttype" : "Initial Customer",
 		"stor_id" : null,
@@ -21,4 +20,4 @@
 		"highqty" : null,
 		"discount" : 5.00
 	}
-]}
+]

@@ -1,5 +1,4 @@
-{
-"sales": [
+[
 	{
 		"stor_id" : "6380",
 		"ord_num" : "6871",
@@ -168,4 +167,4 @@
 		"payterms" : "Net 30",
 		"title_id" : "PC1035"
 	}
-]}
+]

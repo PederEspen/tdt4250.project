@@ -2,6 +2,7 @@ package transformations;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonParseException;
@@ -10,16 +11,26 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import dataModels.Author;
+import dataModels.Discount;
+import dataModels.Employee;
+import dataModels.Jobs;
+import dataModels.Pub_info;
+import dataModels.Publisher;
+import dataModels.Roysched;
+import dataModels.Sale;
+import dataModels.Store;
+import dataModels.Title;
+import dataModels.TitleAuthor;
 
 public class JsonToModel {
 
 	public static void main(String[] args) {
 		//
-		mapJsonToObjects(new File("data/pubsJSON/authors.json"));
+		mapJsonToObjects();
 
 	}
 	
-	public static void mapJsonToObjects(File file) {
+	public static void mapJsonToObjects() {
 		
 		//for each json file in data folder
 		//map it to java objects
@@ -44,19 +55,44 @@ public class JsonToModel {
 		}
 		
 		
+		File authorFile = new File("data/pubsJSON/authors.json");
+		File discountFile = new File("data/pubsJSON/discounts.json");
+		File employeeFile = new File("data/pubsJSON/employee.json");
+		File jobFile = new File("data/pubsJSON/jobs.json");
+		File pubInfoFile = new File("data/pubsJSON/pub_info.json");
+		File publisherFile = new File("data/pubsJSON/publishers.json");
+		File royschedFile = new File("data/pubsJSON/roysched.json");
+		File saleFile = new File("data/pubsJSON/sales.json");
+		File storeFile = new File("data/pubsJSON/stores.json");
+		File titleAuthorFile = new File("data/pubsJSON/titleauthor.json");
+		File titleFile = new File("data/pubsJSON/titles.json");
+		
+		
 		//Mapping authors
-//		try {
-//			objectMapper.readValue(file, new TypeReference<List<Author>>(){});
-//		} catch (JsonParseException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (JsonMappingException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		try {
+			List<Author> authorObjects = objectMapper.readValue(authorFile, new TypeReference<List<Author>>(){});
+			List<Discount> discountObjects = objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){});
+			List<Employee> employeeObjects = objectMapper.readValue(employeeFile, new TypeReference<List<Employee>>(){});
+			List<Jobs> jobObjects = objectMapper.readValue(jobFile, new TypeReference<List<Jobs>>(){});
+			List<Pub_info> pubInfoObjects = objectMapper.readValue(pubInfoFile, new TypeReference<List<Pub_info>>(){});
+			List<Publisher> publisherObjects = objectMapper.readValue(publisherFile, new TypeReference<List<Publisher>>(){});
+			List<Roysched> royschedObjects = objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){});
+			List<Sale> saleObjects = objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){});
+			List<Store> storeObjects = objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){});
+			List<TitleAuthor> titleAuthorObjects = objectMapper.readValue(titleAuthorFile, new TypeReference<List<TitleAuthor>>(){});
+			List<Title> titleObjects = objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){});
+			
+			System.out.println(authorObjects.get(0)); //calls toString
+		} catch (JsonParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

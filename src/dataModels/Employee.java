@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class Employee {
 	
-	private String emp_id;
-	private String fname;
-	private String minit;
-	private String lname;
-	private int job_id;
-	private int job_lvl;
-	private String pub_id;
-	private Date hire_date;
+	public String emp_id;
+	public String fname;
+	public String minit;
+	public String lname;
+	public int job_id;
+	public int job_lvl;
+	public String pub_id;
+	public Date hire_date;
 
 }

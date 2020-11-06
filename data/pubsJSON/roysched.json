@@ -1,5 +1,4 @@
-{
-"roysched": [
+[
 	{
 		"title_id" : "BU1032",
 		"lorange" : 0,
@@ -516,4 +515,4 @@
 		"hirange" : 50000,
 		"royalty" : 18
 	}
-]}
+]

@@ -2,10 +2,10 @@ package dataModels;
 
 public class Discount {
 	
-	private String discounttype;
-	private String stor_id;
-	private int lowqty;
-	private int highqty;
-	private float discount;
+	public String discounttype;
+	public String stor_id;
+	public int lowqty;
+	public int highqty;
+	public float discount;
 
 }

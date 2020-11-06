@@ -1,5 +1,4 @@
-{
-"pub_info": [
+[
 	{
 		"pub_id" : "0736",
 		"pr_info" : "This is sample text data for New Moon Books, publisher 0736 in the pubs database. New Moon Books is located in Boston, Massachusetts."
@@ -32,4 +31,4 @@
 		"pub_id" : "9999",
 		"pr_info" : "This is sample text data for Lucerne Publishing, publisher 9999 in the pubs database. Lucerne publishing is located in Paris, France."
 	}
-]}
+]

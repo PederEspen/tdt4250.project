@@ -1,5 +1,4 @@
-{
-"publishers": [
+[
 	{
 		"pub_id" : "0736",
 		"pub_name" : "New Moon Books",
@@ -38,7 +37,7 @@
 	{
 		"pub_id" : "9901",
 		"pub_name" : "GGG&G",
-		"city" : "Mnchen",
+		"city" : "Munchen",
 		"state" : null,
 		"country" : "Germany"
 	},
@@ -56,4 +55,4 @@
 		"state" : null,
 		"country" : "France"
 	}
-]}
+]

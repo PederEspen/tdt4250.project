@@ -2,7 +2,7 @@ package dataModels;
 
 import java.util.Date;
 
-public class Titles {
+public class Title {
 	public String title_id;
 	public String title;
 	public String type;
@@ -12,5 +12,5 @@ public class Titles {
 	public int royalty;
 	public int ytd_sales;
 	public String notes;
-	public Date pubDate;
+	public Date pubdate;
 }

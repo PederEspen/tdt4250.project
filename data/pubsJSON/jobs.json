@@ -1,5 +1,4 @@
-{
-"jobs": [
+[
 	{
 		"job_id" : 1,
 		"job_desc" : "New Hire - Job not specified",
@@ -84,4 +83,4 @@
 		"min_lvl" : 25,
 		"max_lvl" : 100
 	}
-]}
+]

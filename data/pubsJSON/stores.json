@@ -1,5 +1,4 @@
-{
-"stores": [
+[
 	{
 		"stor_id" : "6380",
 		"stor_name" : "Eric the Read Books",
@@ -48,4 +47,4 @@
 		"state" : "OR",
 		"zip" : "89076"
 	}
-]}
+]

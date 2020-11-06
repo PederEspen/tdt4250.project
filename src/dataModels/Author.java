@@ -11,5 +11,13 @@ public class Author {
 	public String state;
 	public int zip;
 	public int contract;
+	
+	public String getId() {
+		return au_id;
+	}
+	
+	public String toString() {
+		return ("objektet i string: " + au_lname);
+	}
 
 }
