@@ -3,6 +3,7 @@ package transformations;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonParseException;
@@ -25,11 +26,12 @@ public class JsonToModel {
 
 	public static void main(String[] args) {
 		//
-		mapJsonToObjects();
+		HashMap javaObjects = mapJsonToObjects();
+		JavaMToEcoreM.Transform(javaObjects);
 
 	}
 	
-	public static void mapJsonToObjects() {
+	public static HashMap mapJsonToObjects() {
 		
 		//for each json file in data folder
 		//map it to java objects
@@ -65,21 +67,37 @@ public class JsonToModel {
 		File storeFile = new File("data/pubsJSON/stores.json");
 		File titleFile = new File("data/pubsJSON/titles.json");
 		
-		
+		HashMap<String, List> javaObjectsMap = new HashMap();
 		//Mapping authors
 		try {
-			List<Author> authorObjects = objectMapper.readValue(authorFile, new TypeReference<List<Author>>(){});
-			List<Discount> discountObjects = objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){});
-			List<Employee> employeeObjects = objectMapper.readValue(employeeFile, new TypeReference<List<Employee>>(){});
-			List<Jobs> jobObjects = objectMapper.readValue(jobFile, new TypeReference<List<Jobs>>(){});
-			List<Pub_info> pubInfoObjects = objectMapper.readValue(pubInfoFile, new TypeReference<List<Pub_info>>(){});
-			List<Publisher> publisherObjects = objectMapper.readValue(publisherFile, new TypeReference<List<Publisher>>(){});
-			List<Roysched> royschedObjects = objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){});
-			List<Sale> saleObjects = objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){});
-			List<Store> storeObjects = objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){});
-			List<Title> titleObjects = objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){});
 			
-			System.out.println(authorObjects.get(0)); //calls toString
+//			List<Author> authorObjects = objectMapper.readValue(authorFile, new TypeReference<List<Author>>(){});
+//			List<Discount> discountObjects = objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){});
+//			List<Employee> employeeObjects = objectMapper.readValue(employeeFile, new TypeReference<List<Employee>>(){});
+//			List<Jobs> jobObjects = objectMapper.readValue(jobFile, new TypeReference<List<Jobs>>(){});
+//			List<Pub_info> pubInfoObjects = objectMapper.readValue(pubInfoFile, new TypeReference<List<Pub_info>>(){});
+//			List<Publisher> publisherObjects = objectMapper.readValue(publisherFile, new TypeReference<List<Publisher>>(){});
+//			List<Roysched> royschedObjects = objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){});
+//			List<Sale> saleObjects = objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){});
+//			List<Store> storeObjects = objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){});
+//			List<Title> titleObjects = objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){});
+			
+				
+			javaObjectsMap.put("authors", (objectMapper.readValue(authorFile, new TypeReference<List<Author>>(){})));
+			javaObjectsMap.put("discounts", (objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){})));
+			javaObjectsMap.put("employees", (objectMapper.readValue(employeeFile, new TypeReference<List<Employee>>(){})));
+			javaObjectsMap.put("jobs", (objectMapper.readValue(jobFile, new TypeReference<List<Jobs>>(){})));
+			javaObjectsMap.put("pubInfos", (objectMapper.readValue(pubInfoFile, new TypeReference<List<Pub_info>>(){})));
+			javaObjectsMap.put("publishers", (objectMapper.readValue(publisherFile, new TypeReference<List<Publisher>>(){})));
+			javaObjectsMap.put("royscheds", (objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){})));
+			javaObjectsMap.put("sales", (objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){})));
+			javaObjectsMap.put("stores", (objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){})));
+			javaObjectsMap.put("titles", (objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){})));
+			
+			System.out.println(javaObjectsMap);
+			
+			
+			//System.out.println(authorObjects.get(0)); //calls toString
 		} catch (JsonParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -90,6 +108,8 @@ public class JsonToModel {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return javaObjectsMap;
 	}
+	
 
 }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/tdt4250.project/src" modelPluginID="tdt4250.project"
+    modelName="PubsGenMod" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>pubs.ecore</foreignModel>
+  <genPackages prefix="Pubs" disposableProviderFactory="true" ecorePackage="pubs.ecore#/">
+    <genClasses ecoreClass="pubs.ecore#//root">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//root/pub_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//root/stor_id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//root/publishers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//root/stores"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//publisher">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//publisher/pubname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//publisher/pub_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//publisher/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//publisher/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//publisher/country"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//publisher/pub_info"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pubs.ecore#//publisher/employees"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//publisher/titles"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//pub_info">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//pub_info/pub_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//pub_info/pr_info"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//employee">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/lname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/fname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/emp_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/minit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/job_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/job_lvl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/pub_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/hire_date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//employee/job_desc"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//title">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/title_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/pub_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/advance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/royalty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/ytd_sales"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/notes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/pubdate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//title/roysched"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/au_id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//title/sales"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//title/authors"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//roysched">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//roysched/title_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//roysched/lorange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//roysched/hirange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//roysched/royalty"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//sales">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/ord_num"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/stor_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/ord_date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/qty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/payterms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/title_id"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//author">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/au_lname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/au_fname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/au_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/phone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/zip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/contract"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//store">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/stor_name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/stor_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/stor_address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/zip"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//store/sales"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//store/discounts"/>
+    </genClasses>
+    <genClasses ecoreClass="pubs.ecore#//discount">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//discount/discounttype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//discount/stor_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//discount/lowqty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//discount/highqty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//discount/discount"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

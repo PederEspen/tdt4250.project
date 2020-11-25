@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated pubsGenMod -->
+      <package
+            uri="platform:/plugin/tdt4250.project/model/pubs.ecore"
+            class="pubs.PubsPackage"
+            genModel="model/pubsGenMod.genmodel"/>
+   </extension>
+
+</plugin>
