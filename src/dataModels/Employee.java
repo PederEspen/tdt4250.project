@@ -12,5 +12,5 @@ public class Employee {
 	public int job_lvl;
 	public String pub_id;
 	public Date hire_date;
-
+	public String job_desc;
 }

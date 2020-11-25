@@ -20,7 +20,6 @@ import dataModels.Roysched;
 import dataModels.Sale;
 import dataModels.Store;
 import dataModels.Title;
-import dataModels.TitleAuthor;
 
 public class JsonToModel {
 
@@ -64,7 +63,6 @@ public class JsonToModel {
 		File royschedFile = new File("data/pubsJSON/roysched.json");
 		File saleFile = new File("data/pubsJSON/sales.json");
 		File storeFile = new File("data/pubsJSON/stores.json");
-		File titleAuthorFile = new File("data/pubsJSON/titleauthor.json");
 		File titleFile = new File("data/pubsJSON/titles.json");
 		
 		
@@ -79,7 +77,6 @@ public class JsonToModel {
 			List<Roysched> royschedObjects = objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){});
 			List<Sale> saleObjects = objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){});
 			List<Store> storeObjects = objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){});
-			List<TitleAuthor> titleAuthorObjects = objectMapper.readValue(titleAuthorFile, new TypeReference<List<TitleAuthor>>(){});
 			List<Title> titleObjects = objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){});
 			
 			System.out.println(authorObjects.get(0)); //calls toString
