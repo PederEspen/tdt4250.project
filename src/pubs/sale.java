@@ -8,40 +8,40 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>sales</b></em>'.
+ * A representation of the model object '<em><b>sale</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link pubs.sales#getOrd_num <em>Ord num</em>}</li>
- *   <li>{@link pubs.sales#getStor_id <em>Stor id</em>}</li>
- *   <li>{@link pubs.sales#getOrd_date <em>Ord date</em>}</li>
- *   <li>{@link pubs.sales#getQty <em>Qty</em>}</li>
- *   <li>{@link pubs.sales#getPayterms <em>Payterms</em>}</li>
- *   <li>{@link pubs.sales#getTitle_id <em>Title id</em>}</li>
+ *   <li>{@link pubs.sale#getOrd_num <em>Ord num</em>}</li>
+ *   <li>{@link pubs.sale#getStor_id <em>Stor id</em>}</li>
+ *   <li>{@link pubs.sale#getOrd_date <em>Ord date</em>}</li>
+ *   <li>{@link pubs.sale#getQty <em>Qty</em>}</li>
+ *   <li>{@link pubs.sale#getPayterms <em>Payterms</em>}</li>
+ *   <li>{@link pubs.sale#getTitle_id <em>Title id</em>}</li>
  * </ul>
  *
- * @see pubs.PubsPackage#getsales()
+ * @see pubs.PubsPackage#getsale()
  * @model
  * @generated
  */
-public interface sales extends EObject {
+public interface sale extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Ord num</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ord num</em>' attribute.
 	 * @see #setOrd_num(String)
-	 * @see pubs.PubsPackage#getsales_Ord_num()
+	 * @see pubs.PubsPackage#getsale_Ord_num()
 	 * @model
 	 * @generated
 	 */
 	String getOrd_num();
 
 	/**
-	 * Sets the value of the '{@link pubs.sales#getOrd_num <em>Ord num</em>}' attribute.
+	 * Sets the value of the '{@link pubs.sale#getOrd_num <em>Ord num</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ord num</em>' attribute.
@@ -56,14 +56,14 @@ public interface sales extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Stor id</em>' attribute.
 	 * @see #setStor_id(String)
-	 * @see pubs.PubsPackage#getsales_Stor_id()
+	 * @see pubs.PubsPackage#getsale_Stor_id()
 	 * @model
 	 * @generated
 	 */
 	String getStor_id();
 
 	/**
-	 * Sets the value of the '{@link pubs.sales#getStor_id <em>Stor id</em>}' attribute.
+	 * Sets the value of the '{@link pubs.sale#getStor_id <em>Stor id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Stor id</em>' attribute.
@@ -78,14 +78,14 @@ public interface sales extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ord date</em>' attribute.
 	 * @see #setOrd_date(Date)
-	 * @see pubs.PubsPackage#getsales_Ord_date()
+	 * @see pubs.PubsPackage#getsale_Ord_date()
 	 * @model
 	 * @generated
 	 */
 	Date getOrd_date();
 
 	/**
-	 * Sets the value of the '{@link pubs.sales#getOrd_date <em>Ord date</em>}' attribute.
+	 * Sets the value of the '{@link pubs.sale#getOrd_date <em>Ord date</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ord date</em>' attribute.
@@ -100,14 +100,14 @@ public interface sales extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Qty</em>' attribute.
 	 * @see #setQty(int)
-	 * @see pubs.PubsPackage#getsales_Qty()
+	 * @see pubs.PubsPackage#getsale_Qty()
 	 * @model
 	 * @generated
 	 */
 	int getQty();
 
 	/**
-	 * Sets the value of the '{@link pubs.sales#getQty <em>Qty</em>}' attribute.
+	 * Sets the value of the '{@link pubs.sale#getQty <em>Qty</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Qty</em>' attribute.
@@ -122,14 +122,14 @@ public interface sales extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Payterms</em>' attribute.
 	 * @see #setPayterms(String)
-	 * @see pubs.PubsPackage#getsales_Payterms()
+	 * @see pubs.PubsPackage#getsale_Payterms()
 	 * @model
 	 * @generated
 	 */
 	String getPayterms();
 
 	/**
-	 * Sets the value of the '{@link pubs.sales#getPayterms <em>Payterms</em>}' attribute.
+	 * Sets the value of the '{@link pubs.sale#getPayterms <em>Payterms</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Payterms</em>' attribute.
@@ -144,14 +144,14 @@ public interface sales extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title id</em>' attribute.
 	 * @see #setTitle_id(String)
-	 * @see pubs.PubsPackage#getsales_Title_id()
+	 * @see pubs.PubsPackage#getsale_Title_id()
 	 * @model
 	 * @generated
 	 */
 	String getTitle_id();
 
 	/**
-	 * Sets the value of the '{@link pubs.sales#getTitle_id <em>Title id</em>}' attribute.
+	 * Sets the value of the '{@link pubs.sale#getTitle_id <em>Title id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Title id</em>' attribute.
@@ -160,4 +160,4 @@ public interface sales extends EObject {
 	 */
 	void setTitle_id(String value);
 
-} // sales
+} // sale

@@ -62,7 +62,7 @@ public class PubsFactoryImpl extends EFactoryImpl implements PubsFactory {
 			case PubsPackage.EMPLOYEE: return createemployee();
 			case PubsPackage.TITLE: return createtitle();
 			case PubsPackage.ROYSCHED: return createroysched();
-			case PubsPackage.SALES: return createsales();
+			case PubsPackage.SALE: return createsale();
 			case PubsPackage.AUTHOR: return createauthor();
 			case PubsPackage.STORE: return createstore();
 			case PubsPackage.DISCOUNT: return creatediscount();
@@ -143,9 +143,9 @@ public class PubsFactoryImpl extends EFactoryImpl implements PubsFactory {
 	 * @generated
 	 */
 	@Override
-	public sales createsales() {
-		salesImpl sales = new salesImpl();
-		return sales;
+	public sale createsale() {
+		saleImpl sale = new saleImpl();
+		return sale;
 	}
 
 	/**

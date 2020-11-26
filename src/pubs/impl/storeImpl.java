@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import pubs.PubsPackage;
 import pubs.discount;
-import pubs.sales;
+import pubs.sale;
 import pubs.store;
 
 /**
@@ -172,7 +172,7 @@ public class storeImpl extends MinimalEObjectImpl.Container implements store {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<sales> sales;
+	protected EList<sale> sales;
 
 	/**
 	 * The cached value of the '{@link #getDiscounts() <em>Discounts</em>}' containment reference list.
@@ -347,9 +347,9 @@ public class storeImpl extends MinimalEObjectImpl.Container implements store {
 	 * @generated
 	 */
 	@Override
-	public EList<sales> getSales() {
+	public EList<sale> getSales() {
 		if (sales == null) {
-			sales = new EObjectContainmentEList<sales>(sales.class, this, PubsPackage.STORE__SALES);
+			sales = new EObjectContainmentEList<sale>(sale.class, this, PubsPackage.STORE__SALES);
 		}
 		return sales;
 	}
@@ -440,7 +440,7 @@ public class storeImpl extends MinimalEObjectImpl.Container implements store {
 				return;
 			case PubsPackage.STORE__SALES:
 				getSales().clear();
-				getSales().addAll((Collection<? extends sales>)newValue);
+				getSales().addAll((Collection<? extends sale>)newValue);
 				return;
 			case PubsPackage.STORE__DISCOUNTS:
 				getDiscounts().clear();

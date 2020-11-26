@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pubs.PubsPackage;
@@ -157,7 +156,7 @@ public class publisherImpl extends MinimalEObjectImpl.Container implements publi
 	protected pub_info pub_info;
 
 	/**
-	 * The cached value of the '{@link #getEmployees() <em>Employees</em>}' reference list.
+	 * The cached value of the '{@link #getEmployees() <em>Employees</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getEmployees()
@@ -363,7 +362,7 @@ public class publisherImpl extends MinimalEObjectImpl.Container implements publi
 	@Override
 	public EList<employee> getEmployees() {
 		if (employees == null) {
-			employees = new EObjectResolvingEList<employee>(employee.class, this, PubsPackage.PUBLISHER__EMPLOYEES);
+			employees = new EObjectContainmentEList<employee>(employee.class, this, PubsPackage.PUBLISHER__EMPLOYEES);
 		}
 		return employees;
 	}
@@ -391,6 +390,8 @@ public class publisherImpl extends MinimalEObjectImpl.Container implements publi
 		switch (featureID) {
 			case PubsPackage.PUBLISHER__PUB_INFO:
 				return basicSetPub_info(null, msgs);
+			case PubsPackage.PUBLISHER__EMPLOYEES:
+				return ((InternalEList<?>)getEmployees()).basicRemove(otherEnd, msgs);
 			case PubsPackage.PUBLISHER__TITLES:
 				return ((InternalEList<?>)getTitles()).basicRemove(otherEnd, msgs);
 		}

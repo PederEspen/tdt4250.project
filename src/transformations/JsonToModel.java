@@ -15,12 +15,13 @@ import dataModels.Author;
 import dataModels.Discount;
 import dataModels.Employee;
 import dataModels.Jobs;
-import dataModels.Pub_info;
+import dataModels.PubInfo;
 import dataModels.Publisher;
 import dataModels.Roysched;
 import dataModels.Sale;
 import dataModels.Store;
 import dataModels.Title;
+import dataModels.TitleAuthor;
 
 public class JsonToModel {
 
@@ -66,6 +67,8 @@ public class JsonToModel {
 		File saleFile = new File("data/pubsJSON/sales.json");
 		File storeFile = new File("data/pubsJSON/stores.json");
 		File titleFile = new File("data/pubsJSON/titles.json");
+		File titleAuthorFile = new File("data/pubsJSON/titleauthor.json");
+
 		
 		HashMap<String, List> javaObjectsMap = new HashMap();
 		//Mapping authors
@@ -87,14 +90,57 @@ public class JsonToModel {
 			javaObjectsMap.put("discounts", (objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){})));
 			javaObjectsMap.put("employees", (objectMapper.readValue(employeeFile, new TypeReference<List<Employee>>(){})));
 			javaObjectsMap.put("jobs", (objectMapper.readValue(jobFile, new TypeReference<List<Jobs>>(){})));
-			javaObjectsMap.put("pubInfos", (objectMapper.readValue(pubInfoFile, new TypeReference<List<Pub_info>>(){})));
+			javaObjectsMap.put("pubInfos", (objectMapper.readValue(pubInfoFile, new TypeReference<List<PubInfo>>(){})));
 			javaObjectsMap.put("publishers", (objectMapper.readValue(publisherFile, new TypeReference<List<Publisher>>(){})));
 			javaObjectsMap.put("royscheds", (objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){})));
 			javaObjectsMap.put("sales", (objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){})));
 			javaObjectsMap.put("stores", (objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){})));
 			javaObjectsMap.put("titles", (objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){})));
+			javaObjectsMap.put("titleAuthors", (objectMapper.readValue(titleAuthorFile, new TypeReference<List<TitleAuthor>>(){})));
+
 			
-			System.out.println(javaObjectsMap);
+			//Mapping job description to employees
+			for(int i = 0; i < javaObjectsMap.get("employees").size(); i++) {
+				Employee emp = (Employee) javaObjectsMap.get("employees").get(i);
+				for(int j = 0; j < javaObjectsMap.get("jobs").size(); j++) {
+					Jobs job = (Jobs) javaObjectsMap.get("jobs").get(j);
+					if(emp.job_id == job.job_id) {
+						emp.job_desc = job.job_desc;
+					}		
+				}
+			}
+			
+			//Mapping authors to title
+			int count = 0;
+			for(int i = 0; i < javaObjectsMap.get("titleAuthors").size(); i++) {
+				TitleAuthor ta = (TitleAuthor) javaObjectsMap.get("titleAuthors").get(i);
+				for(int j = 0; j < javaObjectsMap.get("titles").size(); j++) {
+					Title t = (Title) javaObjectsMap.get("titles").get(j);
+					t.au_ids = new ArrayList<String>();
+					//System.out.println("JAVA OBJECT AU SIZE BEFORE ADDING: " + t.au_ids.size());
+					for(int k = 0; k < javaObjectsMap.get("authors").size(); k++) {
+						Author a = (Author) javaObjectsMap.get("authors").get(k);
+						
+//						System.out.println("titleauthor: " + ta.title_id +" " +ta.au_id);
+//						System.out.println("author: " + a.au_id);
+//						System.out.println("title: " + t.title_id);
+						if(ta.au_id.equals(a.au_id) && ta.title_id.equals(t.title_id)) {
+							//add author to the title's author id list
+							//System.out.println("MATCH " + a.au_id);
+							t.au_ids.add(a.au_id);
+						}
+						System.out.println(count);
+						count++;
+					}
+					//System.out.println("JAVA OBJECT AU SIZE AFTER ADDING: " + t.au_ids.size());
+					System.out.println("combinations: " + javaObjectsMap.get("titleAuthors").size()*javaObjectsMap.get("titles").size()*javaObjectsMap.get("authors").size());
+				}
+			}
+			
+			
+			
+				
+			//System.out.println(javaObjectsMap);
 			
 			
 			//System.out.println(authorObjects.get(0)); //calls toString

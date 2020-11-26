@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pubs.title#getNotes <em>Notes</em>}</li>
  *   <li>{@link pubs.title#getPubdate <em>Pubdate</em>}</li>
  *   <li>{@link pubs.title#getRoysched <em>Roysched</em>}</li>
- *   <li>{@link pubs.title#getAu_id <em>Au id</em>}</li>
+ *   <li>{@link pubs.title#getAu_ids <em>Au ids</em>}</li>
  *   <li>{@link pubs.title#getSales <em>Sales</em>}</li>
  *   <li>{@link pubs.title#getAuthors <em>Authors</em>}</li>
  * </ul>
@@ -281,30 +281,20 @@ public interface title extends EObject {
 	void setRoysched(roysched value);
 
 	/**
-	 * Returns the value of the '<em><b>Au id</b></em>' attribute.
+	 * Returns the value of the '<em><b>Au ids</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Au id</em>' attribute.
-	 * @see #setAu_id(String)
-	 * @see pubs.PubsPackage#gettitle_Au_id()
+	 * @return the value of the '<em>Au ids</em>' attribute list.
+	 * @see pubs.PubsPackage#gettitle_Au_ids()
 	 * @model
 	 * @generated
 	 */
-	String getAu_id();
-
-	/**
-	 * Sets the value of the '{@link pubs.title#getAu_id <em>Au id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Au id</em>' attribute.
-	 * @see #getAu_id()
-	 * @generated
-	 */
-	void setAu_id(String value);
+	EList<String> getAu_ids();
 
 	/**
 	 * Returns the value of the '<em><b>Sales</b></em>' containment reference list.
-	 * The list contents are of type {@link pubs.sales}.
+	 * The list contents are of type {@link pubs.sale}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales</em>' containment reference list.
@@ -312,7 +302,7 @@ public interface title extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<sales> getSales();
+	EList<sale> getSales();
 
 	/**
 	 * Returns the value of the '<em><b>Authors</b></em>' containment reference list.

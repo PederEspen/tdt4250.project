@@ -1,6 +1,7 @@
 package dataModels;
 
 import java.util.Date;
+import java.util.List;
 
 public class Title {
 	public String title_id;
@@ -13,5 +14,5 @@ public class Title {
 	public int ytd_sales;
 	public String notes;
 	public Date pubdate;
-	public String au_id;
+	public List<String> au_ids;
 }

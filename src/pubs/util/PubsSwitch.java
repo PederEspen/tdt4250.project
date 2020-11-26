@@ -102,9 +102,9 @@ public class PubsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PubsPackage.SALES: {
-				sales sales = (sales)theEObject;
-				T result = casesales(sales);
+			case PubsPackage.SALE: {
+				sale sale = (sale)theEObject;
+				T result = casesale(sale);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -221,17 +221,17 @@ public class PubsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>sales</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>sale</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>sales</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>sale</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casesales(sales object) {
+	public T casesale(sale object) {
 		return null;
 	}
 

@@ -185,7 +185,7 @@ public interface PubsPackage extends EPackage {
 	int PUBLISHER__PUB_INFO = 5;
 
 	/**
-	 * The feature id for the '<em><b>Employees</b></em>' reference list.
+	 * The feature id for the '<em><b>Employees</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -485,13 +485,13 @@ public interface PubsPackage extends EPackage {
 	int TITLE__ROYSCHED = 10;
 
 	/**
-	 * The feature id for the '<em><b>Au id</b></em>' attribute.
+	 * The feature id for the '<em><b>Au ids</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TITLE__AU_ID = 11;
+	int TITLE__AU_IDS = 11;
 
 	/**
 	 * The feature id for the '<em><b>Sales</b></em>' containment reference list.
@@ -594,14 +594,14 @@ public interface PubsPackage extends EPackage {
 	int ROYSCHED_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link pubs.impl.salesImpl <em>sales</em>}' class.
+	 * The meta object id for the '{@link pubs.impl.saleImpl <em>sale</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see pubs.impl.salesImpl
-	 * @see pubs.impl.PubsPackageImpl#getsales()
+	 * @see pubs.impl.saleImpl
+	 * @see pubs.impl.PubsPackageImpl#getsale()
 	 * @generated
 	 */
-	int SALES = 6;
+	int SALE = 6;
 
 	/**
 	 * The feature id for the '<em><b>Ord num</b></em>' attribute.
@@ -610,7 +610,7 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES__ORD_NUM = 0;
+	int SALE__ORD_NUM = 0;
 
 	/**
 	 * The feature id for the '<em><b>Stor id</b></em>' attribute.
@@ -619,7 +619,7 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES__STOR_ID = 1;
+	int SALE__STOR_ID = 1;
 
 	/**
 	 * The feature id for the '<em><b>Ord date</b></em>' attribute.
@@ -628,7 +628,7 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES__ORD_DATE = 2;
+	int SALE__ORD_DATE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Qty</b></em>' attribute.
@@ -637,7 +637,7 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES__QTY = 3;
+	int SALE__QTY = 3;
 
 	/**
 	 * The feature id for the '<em><b>Payterms</b></em>' attribute.
@@ -646,7 +646,7 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES__PAYTERMS = 4;
+	int SALE__PAYTERMS = 4;
 
 	/**
 	 * The feature id for the '<em><b>Title id</b></em>' attribute.
@@ -655,25 +655,25 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES__TITLE_ID = 5;
+	int SALE__TITLE_ID = 5;
 
 	/**
-	 * The number of structural features of the '<em>sales</em>' class.
+	 * The number of structural features of the '<em>sale</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FEATURE_COUNT = 6;
+	int SALE_FEATURE_COUNT = 6;
 
 	/**
-	 * The number of operations of the '<em>sales</em>' class.
+	 * The number of operations of the '<em>sale</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPERATION_COUNT = 0;
+	int SALE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link pubs.impl.authorImpl <em>author</em>}' class.
@@ -1089,10 +1089,10 @@ public interface PubsPackage extends EPackage {
 	EReference getpublisher_Pub_info();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pubs.publisher#getEmployees <em>Employees</em>}'.
+	 * Returns the meta object for the containment reference list '{@link pubs.publisher#getEmployees <em>Employees</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Employees</em>'.
+	 * @return the meta object for the containment reference list '<em>Employees</em>'.
 	 * @see pubs.publisher#getEmployees()
 	 * @see #getpublisher()
 	 * @generated
@@ -1383,15 +1383,15 @@ public interface PubsPackage extends EPackage {
 	EReference gettitle_Roysched();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.title#getAu_id <em>Au id</em>}'.
+	 * Returns the meta object for the attribute list '{@link pubs.title#getAu_ids <em>Au ids</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Au id</em>'.
-	 * @see pubs.title#getAu_id()
+	 * @return the meta object for the attribute list '<em>Au ids</em>'.
+	 * @see pubs.title#getAu_ids()
 	 * @see #gettitle()
 	 * @generated
 	 */
-	EAttribute gettitle_Au_id();
+	EAttribute gettitle_Au_ids();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link pubs.title#getSales <em>Sales</em>}'.
@@ -1470,80 +1470,80 @@ public interface PubsPackage extends EPackage {
 	EAttribute getroysched_Royalty();
 
 	/**
-	 * Returns the meta object for class '{@link pubs.sales <em>sales</em>}'.
+	 * Returns the meta object for class '{@link pubs.sale <em>sale</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>sales</em>'.
-	 * @see pubs.sales
+	 * @return the meta object for class '<em>sale</em>'.
+	 * @see pubs.sale
 	 * @generated
 	 */
-	EClass getsales();
+	EClass getsale();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.sales#getOrd_num <em>Ord num</em>}'.
+	 * Returns the meta object for the attribute '{@link pubs.sale#getOrd_num <em>Ord num</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Ord num</em>'.
-	 * @see pubs.sales#getOrd_num()
-	 * @see #getsales()
+	 * @see pubs.sale#getOrd_num()
+	 * @see #getsale()
 	 * @generated
 	 */
-	EAttribute getsales_Ord_num();
+	EAttribute getsale_Ord_num();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.sales#getStor_id <em>Stor id</em>}'.
+	 * Returns the meta object for the attribute '{@link pubs.sale#getStor_id <em>Stor id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Stor id</em>'.
-	 * @see pubs.sales#getStor_id()
-	 * @see #getsales()
+	 * @see pubs.sale#getStor_id()
+	 * @see #getsale()
 	 * @generated
 	 */
-	EAttribute getsales_Stor_id();
+	EAttribute getsale_Stor_id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.sales#getOrd_date <em>Ord date</em>}'.
+	 * Returns the meta object for the attribute '{@link pubs.sale#getOrd_date <em>Ord date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Ord date</em>'.
-	 * @see pubs.sales#getOrd_date()
-	 * @see #getsales()
+	 * @see pubs.sale#getOrd_date()
+	 * @see #getsale()
 	 * @generated
 	 */
-	EAttribute getsales_Ord_date();
+	EAttribute getsale_Ord_date();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.sales#getQty <em>Qty</em>}'.
+	 * Returns the meta object for the attribute '{@link pubs.sale#getQty <em>Qty</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Qty</em>'.
-	 * @see pubs.sales#getQty()
-	 * @see #getsales()
+	 * @see pubs.sale#getQty()
+	 * @see #getsale()
 	 * @generated
 	 */
-	EAttribute getsales_Qty();
+	EAttribute getsale_Qty();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.sales#getPayterms <em>Payterms</em>}'.
+	 * Returns the meta object for the attribute '{@link pubs.sale#getPayterms <em>Payterms</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Payterms</em>'.
-	 * @see pubs.sales#getPayterms()
-	 * @see #getsales()
+	 * @see pubs.sale#getPayterms()
+	 * @see #getsale()
 	 * @generated
 	 */
-	EAttribute getsales_Payterms();
+	EAttribute getsale_Payterms();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pubs.sales#getTitle_id <em>Title id</em>}'.
+	 * Returns the meta object for the attribute '{@link pubs.sale#getTitle_id <em>Title id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Title id</em>'.
-	 * @see pubs.sales#getTitle_id()
-	 * @see #getsales()
+	 * @see pubs.sale#getTitle_id()
+	 * @see #getsale()
 	 * @generated
 	 */
-	EAttribute getsales_Title_id();
+	EAttribute getsale_Title_id();
 
 	/**
 	 * Returns the meta object for class '{@link pubs.author <em>author</em>}'.
@@ -1941,7 +1941,7 @@ public interface PubsPackage extends EPackage {
 		EReference PUBLISHER__PUB_INFO = eINSTANCE.getpublisher_Pub_info();
 
 		/**
-		 * The meta object literal for the '<em><b>Employees</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Employees</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2163,12 +2163,12 @@ public interface PubsPackage extends EPackage {
 		EReference TITLE__ROYSCHED = eINSTANCE.gettitle_Roysched();
 
 		/**
-		 * The meta object literal for the '<em><b>Au id</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Au ids</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TITLE__AU_ID = eINSTANCE.gettitle_Au_id();
+		EAttribute TITLE__AU_IDS = eINSTANCE.gettitle_Au_ids();
 
 		/**
 		 * The meta object literal for the '<em><b>Sales</b></em>' containment reference list feature.
@@ -2229,14 +2229,14 @@ public interface PubsPackage extends EPackage {
 		EAttribute ROYSCHED__ROYALTY = eINSTANCE.getroysched_Royalty();
 
 		/**
-		 * The meta object literal for the '{@link pubs.impl.salesImpl <em>sales</em>}' class.
+		 * The meta object literal for the '{@link pubs.impl.saleImpl <em>sale</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see pubs.impl.salesImpl
-		 * @see pubs.impl.PubsPackageImpl#getsales()
+		 * @see pubs.impl.saleImpl
+		 * @see pubs.impl.PubsPackageImpl#getsale()
 		 * @generated
 		 */
-		EClass SALES = eINSTANCE.getsales();
+		EClass SALE = eINSTANCE.getsale();
 
 		/**
 		 * The meta object literal for the '<em><b>Ord num</b></em>' attribute feature.
@@ -2244,7 +2244,7 @@ public interface PubsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALES__ORD_NUM = eINSTANCE.getsales_Ord_num();
+		EAttribute SALE__ORD_NUM = eINSTANCE.getsale_Ord_num();
 
 		/**
 		 * The meta object literal for the '<em><b>Stor id</b></em>' attribute feature.
@@ -2252,7 +2252,7 @@ public interface PubsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALES__STOR_ID = eINSTANCE.getsales_Stor_id();
+		EAttribute SALE__STOR_ID = eINSTANCE.getsale_Stor_id();
 
 		/**
 		 * The meta object literal for the '<em><b>Ord date</b></em>' attribute feature.
@@ -2260,7 +2260,7 @@ public interface PubsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALES__ORD_DATE = eINSTANCE.getsales_Ord_date();
+		EAttribute SALE__ORD_DATE = eINSTANCE.getsale_Ord_date();
 
 		/**
 		 * The meta object literal for the '<em><b>Qty</b></em>' attribute feature.
@@ -2268,7 +2268,7 @@ public interface PubsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALES__QTY = eINSTANCE.getsales_Qty();
+		EAttribute SALE__QTY = eINSTANCE.getsale_Qty();
 
 		/**
 		 * The meta object literal for the '<em><b>Payterms</b></em>' attribute feature.
@@ -2276,7 +2276,7 @@ public interface PubsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALES__PAYTERMS = eINSTANCE.getsales_Payterms();
+		EAttribute SALE__PAYTERMS = eINSTANCE.getsale_Payterms();
 
 		/**
 		 * The meta object literal for the '<em><b>Title id</b></em>' attribute feature.
@@ -2284,7 +2284,7 @@ public interface PubsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALES__TITLE_ID = eINSTANCE.getsales_Title_id();
+		EAttribute SALE__TITLE_ID = eINSTANCE.getsale_Title_id();
 
 		/**
 		 * The meta object literal for the '{@link pubs.impl.authorImpl <em>author</em>}' class.

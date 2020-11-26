@@ -92,8 +92,8 @@ public class PubsAdapterFactory extends AdapterFactoryImpl {
 				return createroyschedAdapter();
 			}
 			@Override
-			public Adapter casesales(sales object) {
-				return createsalesAdapter();
+			public Adapter casesale(sale object) {
+				return createsaleAdapter();
 			}
 			@Override
 			public Adapter caseauthor(author object) {
@@ -212,16 +212,16 @@ public class PubsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pubs.sales <em>sales</em>}'.
+	 * Creates a new adapter for an object of class '{@link pubs.sale <em>sale</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pubs.sales
+	 * @see pubs.sale
 	 * @generated
 	 */
-	public Adapter createsalesAdapter() {
+	public Adapter createsaleAdapter() {
 		return null;
 	}
 

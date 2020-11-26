@@ -1,14 +1,14 @@
 [
 	{
 		"discounttype" : "Initial Customer",
-		"stor_id" : null,
+		"stor_id" : "6380",
 		"lowqty" : null,
 		"highqty" : null,
 		"discount" : 10.50
 	},
 	{
 		"discounttype" : "Volume Discount",
-		"stor_id" : null,
+		"stor_id" : "7131",
 		"lowqty" : 100,
 		"highqty" : 1000,
 		"discount" : 6.70

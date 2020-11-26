@@ -18,7 +18,7 @@ import pubs.pub_info;
 import pubs.publisher;
 import pubs.root;
 import pubs.roysched;
-import pubs.sales;
+import pubs.sale;
 import pubs.store;
 import pubs.title;
 
@@ -76,7 +76,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass salesEClass = null;
+	private EClass saleEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -556,7 +556,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute gettitle_Au_id() {
+	public EAttribute gettitle_Au_ids() {
 		return (EAttribute)titleEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -636,8 +636,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getsales() {
-		return salesEClass;
+	public EClass getsale() {
+		return saleEClass;
 	}
 
 	/**
@@ -646,8 +646,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getsales_Ord_num() {
-		return (EAttribute)salesEClass.getEStructuralFeatures().get(0);
+	public EAttribute getsale_Ord_num() {
+		return (EAttribute)saleEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -656,8 +656,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getsales_Stor_id() {
-		return (EAttribute)salesEClass.getEStructuralFeatures().get(1);
+	public EAttribute getsale_Stor_id() {
+		return (EAttribute)saleEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -666,8 +666,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getsales_Ord_date() {
-		return (EAttribute)salesEClass.getEStructuralFeatures().get(2);
+	public EAttribute getsale_Ord_date() {
+		return (EAttribute)saleEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -676,8 +676,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getsales_Qty() {
-		return (EAttribute)salesEClass.getEStructuralFeatures().get(3);
+	public EAttribute getsale_Qty() {
+		return (EAttribute)saleEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -686,8 +686,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getsales_Payterms() {
-		return (EAttribute)salesEClass.getEStructuralFeatures().get(4);
+	public EAttribute getsale_Payterms() {
+		return (EAttribute)saleEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -696,8 +696,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getsales_Title_id() {
-		return (EAttribute)salesEClass.getEStructuralFeatures().get(5);
+	public EAttribute getsale_Title_id() {
+		return (EAttribute)saleEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1022,7 +1022,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		createEAttribute(titleEClass, TITLE__NOTES);
 		createEAttribute(titleEClass, TITLE__PUBDATE);
 		createEReference(titleEClass, TITLE__ROYSCHED);
-		createEAttribute(titleEClass, TITLE__AU_ID);
+		createEAttribute(titleEClass, TITLE__AU_IDS);
 		createEReference(titleEClass, TITLE__SALES);
 		createEReference(titleEClass, TITLE__AUTHORS);
 
@@ -1032,13 +1032,13 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		createEAttribute(royschedEClass, ROYSCHED__HIRANGE);
 		createEAttribute(royschedEClass, ROYSCHED__ROYALTY);
 
-		salesEClass = createEClass(SALES);
-		createEAttribute(salesEClass, SALES__ORD_NUM);
-		createEAttribute(salesEClass, SALES__STOR_ID);
-		createEAttribute(salesEClass, SALES__ORD_DATE);
-		createEAttribute(salesEClass, SALES__QTY);
-		createEAttribute(salesEClass, SALES__PAYTERMS);
-		createEAttribute(salesEClass, SALES__TITLE_ID);
+		saleEClass = createEClass(SALE);
+		createEAttribute(saleEClass, SALE__ORD_NUM);
+		createEAttribute(saleEClass, SALE__STOR_ID);
+		createEAttribute(saleEClass, SALE__ORD_DATE);
+		createEAttribute(saleEClass, SALE__QTY);
+		createEAttribute(saleEClass, SALE__PAYTERMS);
+		createEAttribute(saleEClass, SALE__TITLE_ID);
 
 		authorEClass = createEClass(AUTHOR);
 		createEAttribute(authorEClass, AUTHOR__AU_LNAME);
@@ -1112,7 +1112,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEAttribute(getpublisher_State(), ecorePackage.getEString(), "state", null, 0, 1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getpublisher_Country(), ecorePackage.getEString(), "country", null, 0, 1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getpublisher_Pub_info(), this.getpub_info(), null, "pub_info", null, 0, 1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getpublisher_Employees(), this.getemployee(), null, "employees", null, 0, -1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getpublisher_Employees(), this.getemployee(), null, "employees", null, 0, -1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getpublisher_Titles(), this.gettitle(), null, "titles", null, 0, -1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pub_infoEClass, pub_info.class, "pub_info", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1142,8 +1142,8 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEAttribute(gettitle_Notes(), ecorePackage.getEString(), "notes", null, 0, 1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(gettitle_Pubdate(), ecorePackage.getEDate(), "pubdate", null, 0, 1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(gettitle_Roysched(), this.getroysched(), null, "roysched", null, 0, 1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(gettitle_Au_id(), ecorePackage.getEString(), "au_id", null, 0, 1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(gettitle_Sales(), this.getsales(), null, "sales", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(gettitle_Au_ids(), ecorePackage.getEString(), "au_ids", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(gettitle_Sales(), this.getsale(), null, "sales", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(gettitle_Authors(), this.getauthor(), null, "authors", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(royschedEClass, roysched.class, "roysched", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1152,13 +1152,13 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEAttribute(getroysched_Hirange(), ecorePackage.getEInt(), "hirange", null, 0, 1, roysched.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getroysched_Royalty(), ecorePackage.getEInt(), "royalty", null, 0, 1, roysched.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(salesEClass, sales.class, "sales", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getsales_Ord_num(), ecorePackage.getEString(), "ord_num", null, 0, 1, sales.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getsales_Stor_id(), ecorePackage.getEString(), "stor_id", null, 0, 1, sales.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getsales_Ord_date(), ecorePackage.getEDate(), "ord_date", null, 0, 1, sales.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getsales_Qty(), ecorePackage.getEInt(), "qty", null, 0, 1, sales.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getsales_Payterms(), ecorePackage.getEString(), "payterms", null, 0, 1, sales.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getsales_Title_id(), ecorePackage.getEString(), "title_id", null, 0, 1, sales.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(saleEClass, sale.class, "sale", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getsale_Ord_num(), ecorePackage.getEString(), "ord_num", null, 0, 1, sale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getsale_Stor_id(), ecorePackage.getEString(), "stor_id", null, 0, 1, sale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getsale_Ord_date(), ecorePackage.getEDate(), "ord_date", null, 0, 1, sale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getsale_Qty(), ecorePackage.getEInt(), "qty", null, 0, 1, sale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getsale_Payterms(), ecorePackage.getEString(), "payterms", null, 0, 1, sale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getsale_Title_id(), ecorePackage.getEString(), "title_id", null, 0, 1, sale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(authorEClass, author.class, "author", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getauthor_Au_lname(), ecorePackage.getEString(), "au_lname", null, 0, 1, author.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1178,7 +1178,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEAttribute(getstore_City(), ecorePackage.getEString(), "city", null, 0, 1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getstore_State(), ecorePackage.getEString(), "state", null, 0, 1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getstore_Zip(), ecorePackage.getEString(), "zip", null, 0, 1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getstore_Sales(), this.getsales(), null, "sales", null, 0, -1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getstore_Sales(), this.getsale(), null, "sales", null, 0, -1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getstore_Discounts(), this.getdiscount(), null, "discounts", null, 0, -1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(discountEClass, discount.class, "discount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -15,14 +15,14 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pubs.PubsPackage;
 import pubs.author;
 import pubs.roysched;
-import pubs.sales;
+import pubs.sale;
 import pubs.title;
 
 /**
@@ -44,7 +44,7 @@ import pubs.title;
  *   <li>{@link pubs.impl.titleImpl#getNotes <em>Notes</em>}</li>
  *   <li>{@link pubs.impl.titleImpl#getPubdate <em>Pubdate</em>}</li>
  *   <li>{@link pubs.impl.titleImpl#getRoysched <em>Roysched</em>}</li>
- *   <li>{@link pubs.impl.titleImpl#getAu_id <em>Au id</em>}</li>
+ *   <li>{@link pubs.impl.titleImpl#getAu_ids <em>Au ids</em>}</li>
  *   <li>{@link pubs.impl.titleImpl#getSales <em>Sales</em>}</li>
  *   <li>{@link pubs.impl.titleImpl#getAuthors <em>Authors</em>}</li>
  * </ul>
@@ -263,24 +263,14 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	protected roysched roysched;
 
 	/**
-	 * The default value of the '{@link #getAu_id() <em>Au id</em>}' attribute.
+	 * The cached value of the '{@link #getAu_ids() <em>Au ids</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAu_id()
+	 * @see #getAu_ids()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String AU_ID_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getAu_id() <em>Au id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAu_id()
-	 * @generated
-	 * @ordered
-	 */
-	protected String au_id = AU_ID_EDEFAULT;
+	protected EList<String> au_ids;
 
 	/**
 	 * The cached value of the '{@link #getSales() <em>Sales</em>}' containment reference list.
@@ -290,7 +280,7 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<sales> sales;
+	protected EList<sale> sales;
 
 	/**
 	 * The cached value of the '{@link #getAuthors() <em>Authors</em>}' containment reference list.
@@ -602,8 +592,11 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	 * @generated
 	 */
 	@Override
-	public String getAu_id() {
-		return au_id;
+	public EList<String> getAu_ids() {
+		if (au_ids == null) {
+			au_ids = new EDataTypeUniqueEList<String>(String.class, this, PubsPackage.TITLE__AU_IDS);
+		}
+		return au_ids;
 	}
 
 	/**
@@ -612,22 +605,9 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	 * @generated
 	 */
 	@Override
-	public void setAu_id(String newAu_id) {
-		String oldAu_id = au_id;
-		au_id = newAu_id;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.TITLE__AU_ID, oldAu_id, au_id));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<sales> getSales() {
+	public EList<sale> getSales() {
 		if (sales == null) {
-			sales = new EObjectContainmentEList<sales>(sales.class, this, PubsPackage.TITLE__SALES);
+			sales = new EObjectContainmentEList<sale>(sale.class, this, PubsPackage.TITLE__SALES);
 		}
 		return sales;
 	}
@@ -693,8 +673,8 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 				return getPubdate();
 			case PubsPackage.TITLE__ROYSCHED:
 				return getRoysched();
-			case PubsPackage.TITLE__AU_ID:
-				return getAu_id();
+			case PubsPackage.TITLE__AU_IDS:
+				return getAu_ids();
 			case PubsPackage.TITLE__SALES:
 				return getSales();
 			case PubsPackage.TITLE__AUTHORS:
@@ -745,12 +725,13 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 			case PubsPackage.TITLE__ROYSCHED:
 				setRoysched((roysched)newValue);
 				return;
-			case PubsPackage.TITLE__AU_ID:
-				setAu_id((String)newValue);
+			case PubsPackage.TITLE__AU_IDS:
+				getAu_ids().clear();
+				getAu_ids().addAll((Collection<? extends String>)newValue);
 				return;
 			case PubsPackage.TITLE__SALES:
 				getSales().clear();
-				getSales().addAll((Collection<? extends sales>)newValue);
+				getSales().addAll((Collection<? extends sale>)newValue);
 				return;
 			case PubsPackage.TITLE__AUTHORS:
 				getAuthors().clear();
@@ -801,8 +782,8 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 			case PubsPackage.TITLE__ROYSCHED:
 				setRoysched((roysched)null);
 				return;
-			case PubsPackage.TITLE__AU_ID:
-				setAu_id(AU_ID_EDEFAULT);
+			case PubsPackage.TITLE__AU_IDS:
+				getAu_ids().clear();
 				return;
 			case PubsPackage.TITLE__SALES:
 				getSales().clear();
@@ -844,8 +825,8 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 				return PUBDATE_EDEFAULT == null ? pubdate != null : !PUBDATE_EDEFAULT.equals(pubdate);
 			case PubsPackage.TITLE__ROYSCHED:
 				return roysched != null;
-			case PubsPackage.TITLE__AU_ID:
-				return AU_ID_EDEFAULT == null ? au_id != null : !AU_ID_EDEFAULT.equals(au_id);
+			case PubsPackage.TITLE__AU_IDS:
+				return au_ids != null && !au_ids.isEmpty();
 			case PubsPackage.TITLE__SALES:
 				return sales != null && !sales.isEmpty();
 			case PubsPackage.TITLE__AUTHORS:
@@ -884,8 +865,8 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 		result.append(notes);
 		result.append(", pubdate: ");
 		result.append(pubdate);
-		result.append(", au_id: ");
-		result.append(au_id);
+		result.append(", au_ids: ");
+		result.append(au_ids);
 		result.append(')');
 		return result.toString();
 	}

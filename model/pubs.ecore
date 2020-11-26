@@ -19,7 +19,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="pub_info" eType="#//pub_info"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employees" upperBound="-1"
-        eType="#//employee"/>
+        eType="#//employee" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="titles" upperBound="-1"
         eType="#//title" containment="true"/>
   </eClassifiers>
@@ -51,9 +51,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pubdate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="roysched" eType="#//roysched"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="au_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="au_ids" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sales" upperBound="-1"
-        eType="#//sales" containment="true"/>
+        eType="#//sale" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="authors" upperBound="-1"
         eType="#//author" containment="true"/>
   </eClassifiers>
@@ -63,7 +64,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="hirange" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="royalty" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="sales">
+  <eClassifiers xsi:type="ecore:EClass" name="sale">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ord_num" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="stor_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ord_date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
@@ -90,7 +91,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="zip" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sales" upperBound="-1"
-        eType="#//sales" containment="true"/>
+        eType="#//sale" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="discounts" upperBound="-1"
         eType="#//discount" containment="true"/>
   </eClassifiers>

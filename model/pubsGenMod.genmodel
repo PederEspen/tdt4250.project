@@ -49,7 +49,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/notes"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/pubdate"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//title/roysched"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/au_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//title/au_ids"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//title/sales"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//title/authors"/>
     </genClasses>
@@ -59,13 +59,13 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//roysched/hirange"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//roysched/royalty"/>
     </genClasses>
-    <genClasses ecoreClass="pubs.ecore#//sales">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/ord_num"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/stor_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/ord_date"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/qty"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/payterms"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sales/title_id"/>
+    <genClasses ecoreClass="pubs.ecore#//sale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sale/ord_num"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sale/stor_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sale/ord_date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sale/qty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sale/payterms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//sale/title_id"/>
     </genClasses>
     <genClasses ecoreClass="pubs.ecore#//author">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/au_lname"/>

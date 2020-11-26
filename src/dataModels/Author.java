@@ -9,7 +9,7 @@ public class Author {
 	public String address;
 	public String city;
 	public String state;
-	public int zip;
+	public String zip;
 	public int contract;
 	
 	public String getId() {

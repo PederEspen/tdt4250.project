@@ -12,27 +12,27 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import pubs.PubsPackage;
-import pubs.sales;
+import pubs.sale;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>sales</b></em>'.
+ * An implementation of the model object '<em><b>sale</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link pubs.impl.salesImpl#getOrd_num <em>Ord num</em>}</li>
- *   <li>{@link pubs.impl.salesImpl#getStor_id <em>Stor id</em>}</li>
- *   <li>{@link pubs.impl.salesImpl#getOrd_date <em>Ord date</em>}</li>
- *   <li>{@link pubs.impl.salesImpl#getQty <em>Qty</em>}</li>
- *   <li>{@link pubs.impl.salesImpl#getPayterms <em>Payterms</em>}</li>
- *   <li>{@link pubs.impl.salesImpl#getTitle_id <em>Title id</em>}</li>
+ *   <li>{@link pubs.impl.saleImpl#getOrd_num <em>Ord num</em>}</li>
+ *   <li>{@link pubs.impl.saleImpl#getStor_id <em>Stor id</em>}</li>
+ *   <li>{@link pubs.impl.saleImpl#getOrd_date <em>Ord date</em>}</li>
+ *   <li>{@link pubs.impl.saleImpl#getQty <em>Qty</em>}</li>
+ *   <li>{@link pubs.impl.saleImpl#getPayterms <em>Payterms</em>}</li>
+ *   <li>{@link pubs.impl.saleImpl#getTitle_id <em>Title id</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class salesImpl extends MinimalEObjectImpl.Container implements sales {
+public class saleImpl extends MinimalEObjectImpl.Container implements sale {
 	/**
 	 * The default value of the '{@link #getOrd_num() <em>Ord num</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -158,7 +158,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected salesImpl() {
+	protected saleImpl() {
 		super();
 	}
 
@@ -169,7 +169,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PubsPackage.Literals.SALES;
+		return PubsPackage.Literals.SALE;
 	}
 
 	/**
@@ -192,7 +192,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		String oldOrd_num = ord_num;
 		ord_num = newOrd_num;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALES__ORD_NUM, oldOrd_num, ord_num));
+			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALE__ORD_NUM, oldOrd_num, ord_num));
 	}
 
 	/**
@@ -215,7 +215,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		String oldStor_id = stor_id;
 		stor_id = newStor_id;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALES__STOR_ID, oldStor_id, stor_id));
+			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALE__STOR_ID, oldStor_id, stor_id));
 	}
 
 	/**
@@ -238,7 +238,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		Date oldOrd_date = ord_date;
 		ord_date = newOrd_date;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALES__ORD_DATE, oldOrd_date, ord_date));
+			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALE__ORD_DATE, oldOrd_date, ord_date));
 	}
 
 	/**
@@ -261,7 +261,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		int oldQty = qty;
 		qty = newQty;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALES__QTY, oldQty, qty));
+			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALE__QTY, oldQty, qty));
 	}
 
 	/**
@@ -284,7 +284,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		String oldPayterms = payterms;
 		payterms = newPayterms;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALES__PAYTERMS, oldPayterms, payterms));
+			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALE__PAYTERMS, oldPayterms, payterms));
 	}
 
 	/**
@@ -307,7 +307,7 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		String oldTitle_id = title_id;
 		title_id = newTitle_id;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALES__TITLE_ID, oldTitle_id, title_id));
+			eNotify(new ENotificationImpl(this, Notification.SET, PubsPackage.SALE__TITLE_ID, oldTitle_id, title_id));
 	}
 
 	/**
@@ -318,17 +318,17 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PubsPackage.SALES__ORD_NUM:
+			case PubsPackage.SALE__ORD_NUM:
 				return getOrd_num();
-			case PubsPackage.SALES__STOR_ID:
+			case PubsPackage.SALE__STOR_ID:
 				return getStor_id();
-			case PubsPackage.SALES__ORD_DATE:
+			case PubsPackage.SALE__ORD_DATE:
 				return getOrd_date();
-			case PubsPackage.SALES__QTY:
+			case PubsPackage.SALE__QTY:
 				return getQty();
-			case PubsPackage.SALES__PAYTERMS:
+			case PubsPackage.SALE__PAYTERMS:
 				return getPayterms();
-			case PubsPackage.SALES__TITLE_ID:
+			case PubsPackage.SALE__TITLE_ID:
 				return getTitle_id();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -342,22 +342,22 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PubsPackage.SALES__ORD_NUM:
+			case PubsPackage.SALE__ORD_NUM:
 				setOrd_num((String)newValue);
 				return;
-			case PubsPackage.SALES__STOR_ID:
+			case PubsPackage.SALE__STOR_ID:
 				setStor_id((String)newValue);
 				return;
-			case PubsPackage.SALES__ORD_DATE:
+			case PubsPackage.SALE__ORD_DATE:
 				setOrd_date((Date)newValue);
 				return;
-			case PubsPackage.SALES__QTY:
+			case PubsPackage.SALE__QTY:
 				setQty((Integer)newValue);
 				return;
-			case PubsPackage.SALES__PAYTERMS:
+			case PubsPackage.SALE__PAYTERMS:
 				setPayterms((String)newValue);
 				return;
-			case PubsPackage.SALES__TITLE_ID:
+			case PubsPackage.SALE__TITLE_ID:
 				setTitle_id((String)newValue);
 				return;
 		}
@@ -372,22 +372,22 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PubsPackage.SALES__ORD_NUM:
+			case PubsPackage.SALE__ORD_NUM:
 				setOrd_num(ORD_NUM_EDEFAULT);
 				return;
-			case PubsPackage.SALES__STOR_ID:
+			case PubsPackage.SALE__STOR_ID:
 				setStor_id(STOR_ID_EDEFAULT);
 				return;
-			case PubsPackage.SALES__ORD_DATE:
+			case PubsPackage.SALE__ORD_DATE:
 				setOrd_date(ORD_DATE_EDEFAULT);
 				return;
-			case PubsPackage.SALES__QTY:
+			case PubsPackage.SALE__QTY:
 				setQty(QTY_EDEFAULT);
 				return;
-			case PubsPackage.SALES__PAYTERMS:
+			case PubsPackage.SALE__PAYTERMS:
 				setPayterms(PAYTERMS_EDEFAULT);
 				return;
-			case PubsPackage.SALES__TITLE_ID:
+			case PubsPackage.SALE__TITLE_ID:
 				setTitle_id(TITLE_ID_EDEFAULT);
 				return;
 		}
@@ -402,17 +402,17 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PubsPackage.SALES__ORD_NUM:
+			case PubsPackage.SALE__ORD_NUM:
 				return ORD_NUM_EDEFAULT == null ? ord_num != null : !ORD_NUM_EDEFAULT.equals(ord_num);
-			case PubsPackage.SALES__STOR_ID:
+			case PubsPackage.SALE__STOR_ID:
 				return STOR_ID_EDEFAULT == null ? stor_id != null : !STOR_ID_EDEFAULT.equals(stor_id);
-			case PubsPackage.SALES__ORD_DATE:
+			case PubsPackage.SALE__ORD_DATE:
 				return ORD_DATE_EDEFAULT == null ? ord_date != null : !ORD_DATE_EDEFAULT.equals(ord_date);
-			case PubsPackage.SALES__QTY:
+			case PubsPackage.SALE__QTY:
 				return qty != QTY_EDEFAULT;
-			case PubsPackage.SALES__PAYTERMS:
+			case PubsPackage.SALE__PAYTERMS:
 				return PAYTERMS_EDEFAULT == null ? payterms != null : !PAYTERMS_EDEFAULT.equals(payterms);
-			case PubsPackage.SALES__TITLE_ID:
+			case PubsPackage.SALE__TITLE_ID:
 				return TITLE_ID_EDEFAULT == null ? title_id != null : !TITLE_ID_EDEFAULT.equals(title_id);
 		}
 		return super.eIsSet(featureID);
@@ -444,4 +444,4 @@ public class salesImpl extends MinimalEObjectImpl.Container implements sales {
 		return result.toString();
 	}
 
-} //salesImpl
+} //saleImpl

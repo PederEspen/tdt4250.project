@@ -164,7 +164,7 @@ public interface store extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Sales</b></em>' containment reference list.
-	 * The list contents are of type {@link pubs.sales}.
+	 * The list contents are of type {@link pubs.sale}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales</em>' containment reference list.
@@ -172,7 +172,7 @@ public interface store extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<sales> getSales();
+	EList<sale> getSales();
 
 	/**
 	 * Returns the value of the '<em><b>Discounts</b></em>' containment reference list.

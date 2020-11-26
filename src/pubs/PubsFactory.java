@@ -76,13 +76,13 @@ public interface PubsFactory extends EFactory {
 	roysched createroysched();
 
 	/**
-	 * Returns a new object of class '<em>sales</em>'.
+	 * Returns a new object of class '<em>sale</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>sales</em>'.
+	 * @return a new object of class '<em>sale</em>'.
 	 * @generated
 	 */
-	sales createsales();
+	sale createsale();
 
 	/**
 	 * Returns a new object of class '<em>author</em>'.

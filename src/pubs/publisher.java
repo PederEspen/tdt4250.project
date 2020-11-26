@@ -163,13 +163,13 @@ public interface publisher extends EObject {
 	void setPub_info(pub_info value);
 
 	/**
-	 * Returns the value of the '<em><b>Employees</b></em>' reference list.
+	 * Returns the value of the '<em><b>Employees</b></em>' containment reference list.
 	 * The list contents are of type {@link pubs.employee}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Employees</em>' reference list.
+	 * @return the value of the '<em>Employees</em>' containment reference list.
 	 * @see pubs.PubsPackage#getpublisher_Employees()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<employee> getEmployees();
