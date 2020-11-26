@@ -11,8 +11,11 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+
+import dataModels.Publisher;
 import pubs.PubsFactory;
 import pubs.PubsPackage;
+import pubs.publisher;
 import pubs.root;
 
 public class JavaMToEcoreM {
@@ -32,12 +35,20 @@ public class JavaMToEcoreM {
 			
 		}
 		
-		//Authors
-		List publishers = (List) javaObjects.get("publishers");
+		//Publishers
+		List<Publisher> publishers = (List) javaObjects.get("publishers");
 		for(int i = 0; i < publishers.size(); i++) {
 			//System.out.println(publishers.get(i));
-			
+			publisher p = factory.createpublisher();
+			p.setCity(publishers.get(i).city);
+			p.setCountry(publishers.get(i).country);
+			p.setPubname(publishers.get(i).pub_name);
+			p.setState(publishers.get(i).state);
+			p.setPub_id(publishers.get(i).pub_id);
+			r.getPublishers().add(p);
 		}
+		
+		//
 		
 		Resource.Factory.Registry registry = Resource.Factory.Registry.INSTANCE;
 		Map<String, Object> m = registry.getExtensionToFactoryMap();

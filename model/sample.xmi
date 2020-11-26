@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
-<pubs:root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pubs="platform:/plugin/tdt4250.project/model/pubs.ecore" pub_id="test1" stor_id="test2"/>
+<pubs:root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pubs="platform:/plugin/tdt4250.project/model/pubs.ecore" pub_id="test1" stor_id="test2">
+  <publishers pubname="New Moon Books" city="Boston" state="MA" country="USA"/>
+  <publishers pubname="Binnet &amp; Hardley" city="Washington" state="DC" country="USA"/>
+  <publishers pubname="Algodata Infosystems" city="Berkeley" state="CA" country="USA"/>
+  <publishers pubname="Five Lakes Publishing" city="Chicago" state="IL" country="USA"/>
+  <publishers pubname="Ramona Publishers" city="Dallas" state="TX" country="USA"/>
+  <publishers pubname="GGG&amp;G" city="Munchen" country="Germany"/>
+  <publishers pubname="Scootney Books" city="New York" state="NY" country="USA"/>
+  <publishers pubname="Lucerne Publishing" city="Paris" country="France"/>
+</pubs:root>
