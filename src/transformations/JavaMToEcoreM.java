@@ -227,6 +227,19 @@ public class JavaMToEcoreM {
 			roy.setRoyalty(royscheds.get(i).royalty);
 			
 			//TODO: LINK TO TITLE
+			//loop through all publishers
+			for(int j = 0; j < r.getPublishers().size(); j++) { 
+				//loop through all titles
+				for(int k = 0; k < r.getPublishers().get(j).getTitles().size(); k++) {
+					title t = r.getPublishers().get(j).getTitles().get(k);
+					//if the id matches, set the roysched
+					//System.out.println("Title ID: " + t.getTitle_id() + " - " + "Roy ID: " + roy.getTitle_id());
+					if(t.getTitle_id().equals(roy.getTitle_id())) {
+						//System.out.println("Match!");
+						t.setRoysched(roy);
+					}
+				}
+			}
 		}
 		
 		

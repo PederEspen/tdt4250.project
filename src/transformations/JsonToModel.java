@@ -111,32 +111,63 @@ public class JsonToModel {
 			}
 			
 			//Mapping authors to title
-			int count = 0;
+//			int count = 0;
+//			for(int i = 0; i < javaObjectsMap.get("titleAuthors").size(); i++) {
+//				TitleAuthor ta = (TitleAuthor) javaObjectsMap.get("titleAuthors").get(i);
+//				for(int j = 0; j < javaObjectsMap.get("titles").size(); j++) {
+//					Title t = (Title) javaObjectsMap.get("titles").get(j);
+//					t.au_ids = new ArrayList<String>();
+//					//System.out.println("JAVA OBJECT AU SIZE BEFORE ADDING: " + t.au_ids.size());
+//					for(int k = 0; k < javaObjectsMap.get("authors").size(); k++) {
+//						Author a = (Author) javaObjectsMap.get("authors").get(k);
+//						
+////						System.out.println("titleauthor: " + ta.title_id +" " +ta.au_id);
+////						System.out.println("author: " + a.au_id);
+////						System.out.println("title: " + t.title_id);
+//						if(ta.au_id.equals(a.au_id) && ta.title_id.equals(t.title_id)) {
+//							//add author to the title's author id list
+//							//System.out.println("MATCH " + a.au_id);
+//							t.au_ids.add(a.au_id);
+//						}
+//						//System.out.println(count);
+//						count++;
+//					}
+//					//System.out.println("JAVA OBJECT AU SIZE AFTER ADDING: " + t.au_ids.size());
+//					//System.out.println("combinations: " + javaObjectsMap.get("titleAuthors").size()*javaObjectsMap.get("titles").size()*javaObjectsMap.get("authors").size());
+//				}
+//			}
+			
+			//Mapping authors to title
+			//DETTE FUNGERER SOM DET SKAL
+			int titleIdMatches = 0; //For testing
+			int titleIdAuthorIdMatches = 0; //for testing
 			for(int i = 0; i < javaObjectsMap.get("titleAuthors").size(); i++) {
 				TitleAuthor ta = (TitleAuthor) javaObjectsMap.get("titleAuthors").get(i);
+				
 				for(int j = 0; j < javaObjectsMap.get("titles").size(); j++) {
 					Title t = (Title) javaObjectsMap.get("titles").get(j);
 					t.au_ids = new ArrayList<String>();
-					//System.out.println("JAVA OBJECT AU SIZE BEFORE ADDING: " + t.au_ids.size());
+					if(ta.title_id.equals(t.title_id)) {
+						//System.out.println("TA titleID equal to title titleID");
+						titleIdMatches++;
+					}
+					else {
+						//System.out.println("TA titleID NOT equal to title titleID");
+					}
+					
 					for(int k = 0; k < javaObjectsMap.get("authors").size(); k++) {
 						Author a = (Author) javaObjectsMap.get("authors").get(k);
 						
-//						System.out.println("titleauthor: " + ta.title_id +" " +ta.au_id);
-//						System.out.println("author: " + a.au_id);
-//						System.out.println("title: " + t.title_id);
 						if(ta.au_id.equals(a.au_id) && ta.title_id.equals(t.title_id)) {
-							//add author to the title's author id list
-							//System.out.println("MATCH " + a.au_id);
+							titleIdAuthorIdMatches++;
 							t.au_ids.add(a.au_id);
 						}
-						System.out.println(count);
-						count++;
 					}
-					//System.out.println("JAVA OBJECT AU SIZE AFTER ADDING: " + t.au_ids.size());
-					System.out.println("combinations: " + javaObjectsMap.get("titleAuthors").size()*javaObjectsMap.get("titles").size()*javaObjectsMap.get("authors").size());
+					System.out.println("Title nr " + j + " au ids: " + t.au_ids.size());
 				}
 			}
-			
+			System.out.println("TitleIdMatches: " + titleIdMatches + " out of " + javaObjectsMap.get("titleAuthors").size() + " TA, and " + javaObjectsMap.get("titles").size() + " titles");
+			System.out.println("Number of authors: " + javaObjectsMap.get("authors").size() + ". titleIdAuthorIdMatches: " + titleIdAuthorIdMatches);
 			
 			
 				
