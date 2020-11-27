@@ -1,277 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:pubs.ecore="platform:/plugin/tdt4250.project/model/pubs.ecore" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description platform:/plugin/tdt4250.project/model/pubs.ecore platform:/resource/tdt4250.model_resource/model/pubs.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:pubs="platform:/plugin/tdt4250.project/model/pubs.ecore" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:tree="http://www.eclipse.org/sirius/tree/1.0.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/tree/description/1.0.0 http://www.eclipse.org/sirius/tree/1.0.0#//description platform:/plugin/tdt4250.project/model/pubs.ecore platform:/resource/tdt4250.model_resource/model/pubs.ecore">
   <viewpoint:DAnalysis uid="_WtPN8DCWEeuch4h1qBxt7Q" selectedViews="_Ggvo0DCkEeuch4h1qBxt7Q" version="14.3.1.202003261200">
     <semanticResources>platform:/resource/tdt4250.project/model/pubs.xmi</semanticResources>
-    <semanticResources>pubs.xmi</semanticResources>
+    <semanticResources>platform:/resource/tdt4250.model_resource/model/pubs.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_eIeQcDCWEeuch4h1qBxt7Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_B3_n8DCXEeuch4h1qBxt7Q" name="StoreTable" repPath="#_B2Kb8DCXEeuch4h1qBxt7Q" changeId="0b8e1fe8-16d0-4ae6-a600-8674d177a7cc">
         <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']"/>
-        <target xmi:type="pubs.ecore:root" href="platform:/resource/tdt4250.project/model/pubs.xmi#/"/>
+        <target xmi:type="pubs:root" href="platform:/resource/tdt4250.project/model/pubs.xmi#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_Ggvo0DCkEeuch4h1qBxt7Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Gg0hVjCkEeuch4h1qBxt7Q" name="StoreTable" repPath="#_GgxeADCkEeuch4h1qBxt7Q" changeId="778f542c-e532-4c61-a94b-e720b9165b98">
         <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']"/>
-        <target xmi:type="pubs.ecore:root" href="pubs.xmi#/"/>
+        <target xmi:type="pubs:root" href="pubs.xmi#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__3v-wTCnEeuT65PkJ1nmSQ" name="TitleTree" repPath="#__3YyYDCnEeuT65PkJ1nmSQ" changeId="416b3f03-f2e8-4505-9fc2-208bd40c083f">
+        <description xmi:type="description_2:TreeDescription" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']"/>
+        <target xmi:type="pubs:root" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mxYlATCsEeuT65PkJ1nmSQ" name="PublishersTree" repPath="#_mxX98DCsEeuT65PkJ1nmSQ" changeId="0dfac3e4-13aa-41b7-ba3f-e31e1158a52f">
+        <description xmi:type="description_2:TreeDescription" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']"/>
+        <target xmi:type="pubs:root" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
   <table:DTable uid="_B2Kb8DCXEeuch4h1qBxt7Q" headerColumnWidth="122">
+    <target xmi:type="pubs:root" href="platform:/resource/tdt4250.project/model/pubs.xmi#/"/>
     <lines xmi:type="table:DLine" uid="_B3lYQDCXEeuch4h1qBxt7Q" label="6380">
+      <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
       <lines xmi:type="table:DLine" uid="_oxPzsDCbEeuch4h1qBxt7Q" label="6871">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.0"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxRB0DCbEeuch4h1qBxt7Q" label="722a">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0/@sales.1"/>
       </lines>
+      <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_SOc5AjCXEeuch4h1qBxt7Q" label="Eric the Read Books" column="_SOc5ADCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_oIpfcjCXEeuch4h1qBxt7Q" label="788 Catamaugus Ave." column="_oIpfcDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3esRDCXEeuch4h1qBxt7Q" label="Seattle" column="__3esQDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3esRjCXEeuch4h1qBxt7Q" label="98056" column="__3esQjCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_B3vJQDCXEeuch4h1qBxt7Q"/>
-      <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
-      <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.0"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_B3w-cDCXEeuch4h1qBxt7Q" label="7066">
+      <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
       <lines xmi:type="table:DLine" uid="_oxRo4DCbEeuch4h1qBxt7Q" label="A2976">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.0"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxRo4jCbEeuch4h1qBxt7Q" label="QA7442.3">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1/@sales.1"/>
       </lines>
+      <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_SOdgETCXEeuch4h1qBxt7Q" label="Barnum's" column="_SOc5ADCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_oIpfdTCXEeuch4h1qBxt7Q" label="567 Pasadena Ave." column="_oIpfcDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3fTUzCXEeuch4h1qBxt7Q" label="Tustin" column="__3esQDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3fTVTCXEeuch4h1qBxt7Q" label="92789" column="__3esQjCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_B3w-cTCXEeuch4h1qBxt7Q"/>
-      <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
-      <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.1"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_B3w-cjCXEeuch4h1qBxt7Q" label="7067">
+      <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
       <lines xmi:type="table:DLine" uid="_oxTeEDCbEeuch4h1qBxt7Q" label="D4482">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFNa0TCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.0"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxTeEjCbEeuch4h1qBxt7Q" label="P2121">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFNa0jCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.1"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxUFITCbEeuch4h1qBxt7Q" label="P2121">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFNa0zCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.2"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxUFIzCbEeuch4h1qBxt7Q" label="P2121">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.3"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.3"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFNa1DCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.3"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2/@sales.3"/>
       </lines>
+      <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_SOeHITCXEeuch4h1qBxt7Q" label="News &amp; Brews" column="_SOc5ADCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_oIqGgjCXEeuch4h1qBxt7Q" label="577 First St." column="_oIpfcDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3fTWTCXEeuch4h1qBxt7Q" label="Los Gatos" column="__3esQDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3fTWzCXEeuch4h1qBxt7Q" label="96745" column="__3esQjCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_B3xlgDCXEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
-      <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
-      <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.2"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_B3xlgTCXEeuch4h1qBxt7Q" label="7131">
+      <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
       <lines xmi:type="table:DLine" uid="_oxWhYDCbEeuch4h1qBxt7Q" label="N914008">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB4DCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.0"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxXIcDCbEeuch4h1qBxt7Q" label="N914014">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB4TCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.1"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxXIcjCbEeuch4h1qBxt7Q" label="P3087a">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB4jCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.2"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxXIdDCbEeuch4h1qBxt7Q" label="P3087a">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.3"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.3"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB4zCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.3"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.3"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxXvgTCbEeuch4h1qBxt7Q" label="P3087a">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.4"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.4"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB5DCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.4"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.4"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxXvgzCbEeuch4h1qBxt7Q" label="P3087a">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.5"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.5"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB5TCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.5"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3/@sales.5"/>
       </lines>
+      <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_SOeHIzCXEeuch4h1qBxt7Q" label="Doc-U-Mat: Quality Laundry and Books" column="_SOc5ADCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_oIqGhTCXEeuch4h1qBxt7Q" label="24-A Avogadro Way" column="_oIpfcDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3fTXzCXEeuch4h1qBxt7Q" label="Remulade" column="__3esQDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3f6YTCXEeuch4h1qBxt7Q" label="98014" column="__3esQjCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_B3xlgjCXEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
-      <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
-      <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.3"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_B3xlgzCXEeuch4h1qBxt7Q" label="7896">
+      <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
       <lines xmi:type="table:DLine" uid="_oxY9oDCbEeuch4h1qBxt7Q" label="QQ2299">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB5jCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.0"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxZksTCbEeuch4h1qBxt7Q" label="TQ456">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOB5zCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.1"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxZkszCbEeuch4h1qBxt7Q" label="X999">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOo8DCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4/@sales.2"/>
       </lines>
+      <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_SOeHJTCXEeuch4h1qBxt7Q" label="Fricative Bookshop" column="_SOc5ADCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_oIqGiDCXEeuch4h1qBxt7Q" label="89 Madison St." column="_oIpfcDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3f6ZTCXEeuch4h1qBxt7Q" label="Fremont" column="__3esQDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3f6ZzCXEeuch4h1qBxt7Q" label="90019" column="__3esQjCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_B3xlhDCXEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
-      <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
-      <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.4"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_B3xlhTCXEeuch4h1qBxt7Q" label="8042">
+      <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
       <lines xmi:type="table:DLine" uid="_oxcA8DCbEeuch4h1qBxt7Q" label="423LL922">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOo8TCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.0"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxcA8jCbEeuch4h1qBxt7Q" label="423LL930">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOo8jCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.1"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxcA9DCbEeuch4h1qBxt7Q" label="P723">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOo8zCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.2"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_oxcoATCbEeuch4h1qBxt7Q" label="QA879.1">
+        <target xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.3"/>
+        <semanticElements xmi:type="pubs:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.3"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_oFOo9DCgEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
-        <target xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.3"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5/@sales.3"/>
       </lines>
+      <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_SOeHJzCXEeuch4h1qBxt7Q" label="Bookbeat" column="_SOc5ADCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_oIqGizCXEeuch4h1qBxt7Q" label="679 Carson St." column="_oIpfcDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3ghcjCXEeuch4h1qBxt7Q" label="Portland" column="__3esQDCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
       </cells>
       <cells xmi:type="table:DCell" uid="__3ghdDCXEeuch4h1qBxt7Q" label="89076" column="__3esQjCXEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_B3xlhjCXEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
-      <target xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
-      <semanticElements xmi:type="pubs.ecore:store" href="platform:/resource/tdt4250.project/model/pubs.xmi#//@stores.5"/>
     </lines>
     <columns xmi:type="table:DFeatureColumn" uid="_SOc5ADCXEeuch4h1qBxt7Q" label="Store Name" cells="_SOc5AjCXEeuch4h1qBxt7Q _SOdgETCXEeuch4h1qBxt7Q _SOeHITCXEeuch4h1qBxt7Q _SOeHIzCXEeuch4h1qBxt7Q _SOeHJTCXEeuch4h1qBxt7Q _SOeHJzCXEeuch4h1qBxt7Q" width="227" featureName="stor_name">
       <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedColumnMappings[name='Store%20Name']"/>
@@ -298,259 +307,258 @@
       </currentStyle>
     </columns>
     <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/tdt4250.project.design2/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']"/>
-    <target xmi:type="pubs.ecore:root" href="platform:/resource/tdt4250.project/model/pubs.xmi#/"/>
   </table:DTable>
   <table:DTable uid="_GgxeADCkEeuch4h1qBxt7Q" headerColumnWidth="108">
-    <target xmi:type="pubs.ecore:root" href="pubs.xmi#/"/>
+    <target xmi:type="pubs:root" href="pubs.xmi#/"/>
     <lines xmi:type="table:DLine" uid="_G8Oq8TCkEeuch4h1qBxt7Q" label="7066">
-      <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
+      <target xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
       <lines xmi:type="table:DLine" uid="_G8PSBTCkEeuch4h1qBxt7Q" label="A2976">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.1/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.1/@sales.0"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.1/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.1/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8PSBzCkEeuch4h1qBxt7Q" label="QA7442.3">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.1/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.1/@sales.1"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.1/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.1/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
       </lines>
-      <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
+      <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_G8RHQDCkEeuch4h1qBxt7Q" label="Barnum's" column="_GgxeATCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RHQjCkEeuch4h1qBxt7Q" label="567 Pasadena Ave." column="_Ggz6QDCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RHRDCkEeuch4h1qBxt7Q" label="Tustin" column="_Gg0hUTCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuQDCkEeuch4h1qBxt7Q" label="92789" column="_Gg0hUzCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.1"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.1"/>
       </cells>
     </lines>
     <lines xmi:type="table:DLine" uid="_G8Oq-TCkEeuch4h1qBxt7Q" label="8042">
-      <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
+      <target xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
       <lines xmi:type="table:DLine" uid="_G8QgLDCkEeuch4h1qBxt7Q" label="423LL922">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.0"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgLTCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgLjCkEeuch4h1qBxt7Q" label="423LL930">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.1"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgLzCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgMDCkEeuch4h1qBxt7Q" label="P723">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.2"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgMTCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgMjCkEeuch4h1qBxt7Q" label="QA879.1">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.3"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.5/@sales.3"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.3"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.5/@sales.3"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgMzCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
-      <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
+      <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_G8RuljCkEeuch4h1qBxt7Q" label="Bookbeat" column="_GgxeATCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RumDCkEeuch4h1qBxt7Q" label="679 Carson St." column="_Ggz6QDCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RumjCkEeuch4h1qBxt7Q" label="Portland" column="_Gg0hUTCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RunDCkEeuch4h1qBxt7Q" label="89076" column="_Gg0hUzCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.5"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.5"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_G8PSADCkEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_G8Oq9TCkEeuch4h1qBxt7Q" label="7131">
-      <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
+      <target xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
       <lines xmi:type="table:DLine" uid="_G8P5EDCkEeuch4h1qBxt7Q" label="N914008">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.0"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8P5ETCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8P5EjCkEeuch4h1qBxt7Q" label="N914014">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.1"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8P5EzCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8P5FDCkEeuch4h1qBxt7Q" label="P3087a">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.2"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8P5FTCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgIDCkEeuch4h1qBxt7Q" label="P3087a">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.3"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.3"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.3"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.3"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgITCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgIjCkEeuch4h1qBxt7Q" label="P3087a">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.4"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.4"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.4"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.4"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgIzCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgJDCkEeuch4h1qBxt7Q" label="P3087a">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.5"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.3/@sales.5"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.5"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.3/@sales.5"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgJTCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
-      <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
+      <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_G8RuYjCkEeuch4h1qBxt7Q" label="Doc-U-Mat: Quality Laundry and Books" column="_GgxeATCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuZDCkEeuch4h1qBxt7Q" label="24-A Avogadro Way" column="_Ggz6QDCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuZjCkEeuch4h1qBxt7Q" label="Remulade" column="_Gg0hUTCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuaDCkEeuch4h1qBxt7Q" label="98014" column="_Gg0hUzCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.3"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.3"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_G8Oq9jCkEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_G8KZgDCkEeuch4h1qBxt7Q" label="6380">
-      <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
+      <target xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
       <lines xmi:type="table:DLine" uid="_G8PSATCkEeuch4h1qBxt7Q" label="6871">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.0/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.0/@sales.0"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.0/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.0/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8PSAzCkEeuch4h1qBxt7Q" label="722a">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.0/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.0/@sales.1"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.0/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.0/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
       </lines>
-      <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
+      <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_G8RHMDCkEeuch4h1qBxt7Q" label="Eric the Read Books" column="_GgxeATCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RHMjCkEeuch4h1qBxt7Q" label="788 Catamaugus Ave." column="_Ggz6QDCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RHNDCkEeuch4h1qBxt7Q" label="Seattle" column="_Gg0hUTCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RHNjCkEeuch4h1qBxt7Q" label="98056" column="_Gg0hUzCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.0"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.0"/>
       </cells>
     </lines>
     <lines xmi:type="table:DLine" uid="_G8Oq9zCkEeuch4h1qBxt7Q" label="7896">
-      <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
+      <target xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
       <lines xmi:type="table:DLine" uid="_G8QgJjCkEeuch4h1qBxt7Q" label="QQ2299">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.4/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.4/@sales.0"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.4/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.4/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgJzCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgKDCkEeuch4h1qBxt7Q" label="TQ456">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.4/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.4/@sales.1"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.4/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.4/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgKTCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8QgKjCkEeuch4h1qBxt7Q" label="X999">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.4/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.4/@sales.2"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.4/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.4/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8QgKzCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
-      <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
+      <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_G8RugjCkEeuch4h1qBxt7Q" label="Fricative Bookshop" column="_GgxeATCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuhDCkEeuch4h1qBxt7Q" label="89 Madison St." column="_Ggz6QDCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuhjCkEeuch4h1qBxt7Q" label="Fremont" column="_Gg0hUTCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuiDCkEeuch4h1qBxt7Q" label="90019" column="_Gg0hUzCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.4"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.4"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_G8Oq-DCkEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
     </lines>
     <lines xmi:type="table:DLine" uid="_G8Oq8zCkEeuch4h1qBxt7Q" label="7067">
-      <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
+      <target xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
       <lines xmi:type="table:DLine" uid="_G8PSCTCkEeuch4h1qBxt7Q" label="D4482">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.0"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.0"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.0"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.0"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8PSCjCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8PSCzCkEeuch4h1qBxt7Q" label="P2121">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.1"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.1"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.1"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.1"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8PSDDCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8PSDTCkEeuch4h1qBxt7Q" label="P2121">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.2"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.2"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.2"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.2"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8PSDjCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
       <lines xmi:type="table:DLine" uid="_G8PSDzCkEeuch4h1qBxt7Q" label="P2121">
-        <target xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.3"/>
-        <semanticElements xmi:type="pubs.ecore:sale" href="pubs.xmi#//@stores.2/@sales.3"/>
+        <target xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.3"/>
+        <semanticElements xmi:type="pubs:sale" href="pubs.xmi#//@stores.2/@sales.3"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']/@ownedSubLines[name='OrderNumber']"/>
         <currentStyle xmi:type="table:DTableElementStyle" uid="_G8PSEDCkEeuch4h1qBxt7Q" backgroundColor="194,239,255"/>
       </lines>
-      <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
+      <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']/@ownedLineMappings[name='StoreLine']"/>
       <cells xmi:type="table:DCell" uid="_G8RuSjCkEeuch4h1qBxt7Q" label="News &amp; Brews" column="_GgxeATCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuTDCkEeuch4h1qBxt7Q" label="577 First St." column="_Ggz6QDCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuTjCkEeuch4h1qBxt7Q" label="Los Gatos" column="_Gg0hUTCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
       </cells>
       <cells xmi:type="table:DCell" uid="_G8RuUDCkEeuch4h1qBxt7Q" label="96745" column="_Gg0hUzCkEeuch4h1qBxt7Q">
-        <target xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
-        <semanticElements xmi:type="pubs.ecore:store" href="pubs.xmi#//@stores.2"/>
+        <target xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
+        <semanticElements xmi:type="pubs:store" href="pubs.xmi#//@stores.2"/>
       </cells>
       <currentStyle xmi:type="table:DTableElementStyle" uid="_G8Oq9DCkEeuch4h1qBxt7Q" backgroundColor="114,159,207"/>
     </lines>
@@ -580,4 +588,478 @@
     </columns>
     <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='StoreTable']"/>
   </table:DTable>
+  <tree:DTree uid="__3YyYDCnEeuT65PkJ1nmSQ">
+    <target xmi:type="pubs:root" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3oqADCnEeuT65PkJ1nmSQ" name="You Can Combat Computer Stress! (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.0"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3pREDCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rGQDCnEeuT65PkJ1nmSQ" name="Is Anger the Enemy? (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.1"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rGQTCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rGQzCnEeuT65PkJ1nmSQ" name="Life Without Fear (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.2"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.2"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rGRDCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rGRjCnEeuT65PkJ1nmSQ" name="Prolonged Data Deprivation: Four Case Studies (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.3"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.3"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rGRzCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rGSTCnEeuT65PkJ1nmSQ" name="Emotional Security: A New Algorithm (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.4"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@titles.4"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rGSjCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtUDCnEeuT65PkJ1nmSQ" name="Silicon Valley Gastronomic Treats (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.0"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtUTCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtUzCnEeuT65PkJ1nmSQ" name="The Gourmet Microwave (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.1"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtVDCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtVjCnEeuT65PkJ1nmSQ" name="The Psychology of Computer Cooking (2014)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.2"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.2"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtVzCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtWTCnEeuT65PkJ1nmSQ" name="Computer Phobic AND Non-Phobic Individuals: Behavior Variations (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.3"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.3"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtWjCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtXDCnEeuT65PkJ1nmSQ" name="Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.4"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.4"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtXTCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtXzCnEeuT65PkJ1nmSQ" name="Fifty Years in Buckingham Palace Kitchens (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.5"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.5"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtYDCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtYjCnEeuT65PkJ1nmSQ" name="Sushi, Anyone? (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.6"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@titles.6"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3rtYzCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3rtZTCnEeuT65PkJ1nmSQ" name="The Busy Executive's Database Guide (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.0"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3sUYDCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3sUYjCnEeuT65PkJ1nmSQ" name="Cooking with Computers: Surreptitious Balance Sheets (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.1"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3sUYzCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3sUZTCnEeuT65PkJ1nmSQ" name="Straight Talk About Computers (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.2"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.2"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3sUZjCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3sUaDCnEeuT65PkJ1nmSQ" name="But Is It User Friendly? (1991)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.3"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.3"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3sUaTCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3sUazCnEeuT65PkJ1nmSQ" name="Secrets of Silicon Valley (1994)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.4"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.4"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3sUbDCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="__3sUbjCnEeuT65PkJ1nmSQ" name="Net Etiquette (2014)">
+      <target xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.5"/>
+      <semanticElements xmi:type="pubs:title" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@titles.5"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="__3sUbzCnEeuT65PkJ1nmSQ">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']/@subItemMappings[name='Title']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_2:TreeDescription" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Titles']"/>
+  </tree:DTree>
+  <tree:DTree uid="_mxX98DCsEeuT65PkJ1nmSQ">
+    <target xmi:type="pubs:root" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkDPADCuEeuT65PkJ1nmSQ" name="New Moon Books" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZH_kDCuEeuT65PkJ1nmSQ" name="Acquisitions Manager: Thomas, Gary (GHT50241M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZJ0wDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oQsMDCuEeuT65PkJ1nmSQ" name="Editor: Snyder, Howard (HAS54740M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.1"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oQsMTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTQDCuEeuT65PkJ1nmSQ" name="Designer: Josephs, Karin (KFJ64308F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.2"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTQTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTQzCuEeuT65PkJ1nmSQ" name="Publisher: Lebihan, Laurence (LAL21447M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.3"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.3"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTRDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTRjCuEeuT65PkJ1nmSQ" name="Productions Manager: Sommer, Martin (MFS52347M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.4"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.4"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTRzCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTSTCuEeuT65PkJ1nmSQ" name="Managing Editor: Karttunen, Matti (MGK44605M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.5"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.5"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTSjCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTTDCuEeuT65PkJ1nmSQ" name="Public Relations Manager: Saveley, Mary (MMS49649F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.6"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.6"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTTTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTTzCuEeuT65PkJ1nmSQ" name="Marketing Manager: Ibsen, Palle (PDI47470M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.7"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.7"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTUDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTUjCuEeuT65PkJ1nmSQ" name="Operations Manager: Mendel, Roland (R-M53550M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.8"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.8"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTUzCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2oRTVTCuEeuT65PkJ1nmSQ" name="Sales Representative: O'Rourke, Timothy (TPO55093M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.9"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0/@employees.9"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2oRTVjCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkDPATCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkD2EDCuEeuT65PkJ1nmSQ" name="Binnet &amp; Hardley" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZJ0wTCuEeuT65PkJ1nmSQ" name="Public Relations Manager: Domingues, Anabela (ARD36773F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZJ0wjCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvsDCuEeuT65PkJ1nmSQ" name="Operations Manager: Tonini, Daniel (DBT39435M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.1"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvsTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvszCuEeuT65PkJ1nmSQ" name="Designer: Lincoln, Elizabeth (ENL44273F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.2"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvtDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvtjCuEeuT65PkJ1nmSQ" name="Editor: Bennett, Helen (H-B39728F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.3"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.3"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvtzCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvuTCuEeuT65PkJ1nmSQ" name="Marketing Manager: Brown, Lesley (L-B31947F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.4"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.4"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvujCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvvDCuEeuT65PkJ1nmSQ" name="Acquisitions Manager: Rance, Martine (M-R38834F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.5"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.5"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvvTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvvzCuEeuT65PkJ1nmSQ" name="Productions Manager: Franken, Peter (PHF38899M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.6"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.6"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvwDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvwjCuEeuT65PkJ1nmSQ" name="Sales Representative: Accorti, Paolo (PMA42628M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.7"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.7"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvwzCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvxTCuEeuT65PkJ1nmSQ" name="Publisher: Henriot, Paul (PXH22250M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.8"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.8"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvxjCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_27GvyDCuEeuT65PkJ1nmSQ" name="Managing Editor: Ashworth, Victoria (VPA30890F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.9"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1/@employees.9"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_27GvyTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkD2ETCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkD2EzCuEeuT65PkJ1nmSQ" name="Algodata Infosystems">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZKb0DCuEeuT65PkJ1nmSQ" name="Productions Manager: Cruz, Aria (A-C71970F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZKb0TCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8toDCuEeuT65PkJ1nmSQ" name="Sales Representative: Schmitt, Carine (CGS88322F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.1"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8toTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8tozCuEeuT65PkJ1nmSQ" name="Managing Editor: Roel, Diego (DWR65030M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.2"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8tpDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8tpjCuEeuT65PkJ1nmSQ" name="Marketing Manager: Larsson, Maria (M-L67958F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.3"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.3"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8tpzCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8tqTCuEeuT65PkJ1nmSQ" name="Operations Manager: Paolino, Miguel (MAP77183M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.4"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.4"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8tqjCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8trDCuEeuT65PkJ1nmSQ" name="Acquisitions Manager: Smith, Margaret (MAS70474F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.5"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.5"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8trTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8trzCuEeuT65PkJ1nmSQ" name="Designer: Afonso, Pedro (PSA89086M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.6"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.6"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8tsDCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8tsjCuEeuT65PkJ1nmSQ" name="Public Relations Manager: Parente, Paula (PSP68661F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.7"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.7"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8tszCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8ttTCuEeuT65PkJ1nmSQ" name="Publisher: Ottlieb, Sven (SKO22412M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.8"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.8"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8ttjCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_3M8tuDCuEeuT65PkJ1nmSQ" name="Editor: Latimer, Yoshi (Y-L77953M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.9"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2/@employees.9"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_3M8tuTCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.2"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkD2FDCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkD2FjCuEeuT65PkJ1nmSQ" name="Five Lakes Publishing" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.3"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZKb0jCuEeuT65PkJ1nmSQ" name="Publisher: Muller, Rita (RBM23061F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.3/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.3/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZKb0zCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.3"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkD2FzCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkD2GTCuEeuT65PkJ1nmSQ" name="Ramona Publishers" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.4"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZKb1DCuEeuT65PkJ1nmSQ" name="Publisher: Pontes, Maria (MJP25939M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.4/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.4/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZKb1TCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.4"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkD2GjCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkD2HDCuEeuT65PkJ1nmSQ" name="GGG&amp;G" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.5"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZLC4DCuEeuT65PkJ1nmSQ" name="Publisher: Labrune, Janine (JYL26161F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.5/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.5/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZLC4TCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.5"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkD2HTCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkEdIDCuEeuT65PkJ1nmSQ" name="Scootney Books" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZLC4jCuEeuT65PkJ1nmSQ" name="Business Operations Manager: Devon, Ann (AMD15433F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZLC4zCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_YjZiszC0EeuT65PkJ1nmSQ" name="Chief Financial Officier: Chang, Francisco (F-C16315M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6/@employees.1"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6/@employees.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_YjZitDC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_YjZitjC0EeuT65PkJ1nmSQ" name="Chief Executive Officer: Cramer, Philip (PTC11962M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6/@employees.2"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6/@employees.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_YjZitzC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.6"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkEdITCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pkEdIzCuEeuT65PkJ1nmSQ" name="Lucerne Publishing" expanded="true">
+      <target xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1ZLC5DCuEeuT65PkJ1nmSQ" name="Managing Editor: Roulet, Annette (A-R89858F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.0"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1ZLC5TCuEeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Y4r2MzC0EeuT65PkJ1nmSQ" name="Publisher: Hernadez, Carlos (CFH28514M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.1"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Y4r2NDC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Y4r2NjC0EeuT65PkJ1nmSQ" name="Marketing Manager: Nagy, Helvetius (HAN90777M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.2"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Y4r2NzC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Y4r2OTC0EeuT65PkJ1nmSQ" name="Acquisitions Manager: Jablonski, Karla (KJJ92907F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.3"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.3"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Y4r2OjC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Y4r2PDC0EeuT65PkJ1nmSQ" name="Public Relations Manager: Pereira, Manuel (M-P91209M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.4"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.4"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Y4r2PTC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Y4r2PzC0EeuT65PkJ1nmSQ" name="Operations Manager: McKenna, Patricia (PCM98509F)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.5"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.5"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Y4r2QDC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Y4sdQDC0EeuT65PkJ1nmSQ" name="Productions Manager: Koskitalo, Pirkko (POK93028M)">
+        <target xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.6"/>
+        <semanticElements xmi:type="pubs:employee" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7/@employees.6"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Y4sdQTC0EeuT65PkJ1nmSQ"/>
+        <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']/@subItemMappings[name='Employees']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="pubs:publisher" href="platform:/resource/tdt4250.model_resource/model/pubs.xmi#//@publishers.7"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pkEdJDCuEeuT65PkJ1nmSQ" labelSize="12">
+        <labelFormat>bold</labelFormat>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:TreeItemMapping" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']/@subItemMappings[name='Publisher']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_2:TreeDescription" href="platform:/resource/tdt4250.design/description/design2.odesign#//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='Publishers']"/>
+  </tree:DTree>
 </xmi:XMI>

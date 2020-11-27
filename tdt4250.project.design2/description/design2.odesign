@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" name="design2" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" name="design2" version="12.0.0.2017041100">
   <ownedViewpoints name="PubsViewPoint" modelFileExtension="xmi">
     <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="StoreTable" initialisation="true" domainClass="pubs::root">
       <ownedLineMappings name="StoreLine" domainClass="pubs::store" headerLabelExpression="aql:self.stor_id">
@@ -52,6 +52,30 @@
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedColumnMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:TreeDescription" name="Titles" domainClass="pubs::root">
+      <subItemMappings name="Title" domainClass="pubs::title" semanticCandidatesExpression="feature:eAllContents">
+        <defaultStyle labelExpression="aql:self.title + ' (' + self.pubdate .toString().last(4) + ')'">
+          <labelFormat>bold</labelFormat>
+          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultStyle>
+      </subItemMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:TreeDescription" name="Publishers" domainClass="pubs::root">
+      <subItemMappings name="Publisher" domainClass="pubs::publisher" semanticCandidatesExpression="feature:eAllContents">
+        <defaultStyle labelSize="12" labelExpression="aql: self.pubname">
+          <labelFormat>bold</labelFormat>
+          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultStyle>
+        <subItemMappings name="Employees" domainClass="pubs::employee" semanticCandidatesExpression="feature:eAllContents">
+          <defaultStyle labelExpression="aql: self.job_desc + ': ' + self.lname + ', ' + self.fname + ' (' +  self.emp_id + ')'">
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultStyle>
+        </subItemMappings>
+      </subItemMappings>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="tdt4250.project.design2.Services"/>
   </ownedViewpoints>
