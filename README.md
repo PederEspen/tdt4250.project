@@ -9,6 +9,21 @@ The plugins used for this project is:
 
 * Jackson library for creating java objects from JSON strings
 
+### Setup 
+
+* Clone the repo: ``` git clone https://github.com/PederEspen/tdt4250.project.git ```
+
+* Install Jackson
+
+  * Navigate to "Install new software" in Eclipse
+  * Click "Add..." to add Orbit repository
+  * Insert "http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository" in location
+  * Click "Add"
+  * Choose "All Bundles" and check "Jackson-annotations", "Jackson-core" and "jackson-databind"
+  * Click "Next" and then "Finish"
+
+
+
 ### Fetch from API and transform from JSON to Java objects
 
 The fetching is handled in the tdt4250.project project, inside /src/transformation/JSONtoModel.java file.
