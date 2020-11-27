@@ -305,13 +305,15 @@ public interface title extends EObject {
 	EList<sale> getSales();
 
 	/**
-	 * Returns the value of the '<em><b>Authors</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Authors</b></em>' reference list.
 	 * The list contents are of type {@link pubs.author}.
+	 * It is bidirectional and its opposite is '{@link pubs.author#getTitles <em>Titles</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Authors</em>' containment reference list.
+	 * @return the value of the '<em>Authors</em>' reference list.
 	 * @see pubs.PubsPackage#gettitle_Authors()
-	 * @model containment="true"
+	 * @see pubs.author#getTitles
+	 * @model opposite="titles"
 	 * @generated
 	 */
 	EList<author> getAuthors();

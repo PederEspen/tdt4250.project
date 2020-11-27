@@ -216,6 +216,16 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getroot_Authors() {
+		return (EReference)rootEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getpublisher() {
 		return publisherEClass;
 	}
@@ -806,6 +816,16 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getauthor_Titles() {
+		return (EReference)authorEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getstore() {
 		return storeEClass;
 	}
@@ -984,6 +1004,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		createEAttribute(rootEClass, ROOT__STOR_ID);
 		createEReference(rootEClass, ROOT__PUBLISHERS);
 		createEReference(rootEClass, ROOT__STORES);
+		createEReference(rootEClass, ROOT__AUTHORS);
 
 		publisherEClass = createEClass(PUBLISHER);
 		createEAttribute(publisherEClass, PUBLISHER__PUBNAME);
@@ -1050,6 +1071,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		createEAttribute(authorEClass, AUTHOR__STATE);
 		createEAttribute(authorEClass, AUTHOR__ZIP);
 		createEAttribute(authorEClass, AUTHOR__CONTRACT);
+		createEReference(authorEClass, AUTHOR__TITLES);
 
 		storeEClass = createEClass(STORE);
 		createEAttribute(storeEClass, STORE__STOR_NAME);
@@ -1104,6 +1126,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEAttribute(getroot_Stor_id(), ecorePackage.getEString(), "stor_id", null, 0, 1, root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getroot_Publishers(), this.getpublisher(), null, "publishers", null, 0, -1, root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getroot_Stores(), this.getstore(), null, "stores", null, 0, -1, root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getroot_Authors(), this.getauthor(), null, "authors", null, 0, -1, root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(publisherEClass, publisher.class, "publisher", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getpublisher_Pubname(), ecorePackage.getEString(), "pubname", null, 0, 1, publisher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1144,7 +1167,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEReference(gettitle_Roysched(), this.getroysched(), null, "roysched", null, 0, 1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(gettitle_Au_ids(), ecorePackage.getEString(), "au_ids", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(gettitle_Sales(), this.getsale(), null, "sales", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(gettitle_Authors(), this.getauthor(), null, "authors", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(gettitle_Authors(), this.getauthor(), this.getauthor_Titles(), "authors", null, 0, -1, title.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(royschedEClass, roysched.class, "roysched", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getroysched_Title_id(), ecorePackage.getEString(), "title_id", null, 0, 1, roysched.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1170,6 +1193,7 @@ public class PubsPackageImpl extends EPackageImpl implements PubsPackage {
 		initEAttribute(getauthor_State(), ecorePackage.getEString(), "state", null, 0, 1, author.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getauthor_Zip(), ecorePackage.getEString(), "zip", null, 0, 1, author.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getauthor_Contract(), ecorePackage.getEInt(), "contract", null, 0, 1, author.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getauthor_Titles(), this.gettitle(), this.gettitle_Authors(), "titles", null, 0, -1, author.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(storeEClass, store.class, "store", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getstore_Stor_name(), ecorePackage.getEString(), "stor_name", null, 0, 1, store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

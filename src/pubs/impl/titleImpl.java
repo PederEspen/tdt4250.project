@@ -16,8 +16,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pubs.PubsPackage;
@@ -284,7 +284,7 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	protected EList<sale> sales;
 
 	/**
-	 * The cached value of the '{@link #getAuthors() <em>Authors</em>}' containment reference list.
+	 * The cached value of the '{@link #getAuthors() <em>Authors</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAuthors()
@@ -621,9 +621,24 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	@Override
 	public EList<author> getAuthors() {
 		if (authors == null) {
-			authors = new EObjectContainmentEList<author>(author.class, this, PubsPackage.TITLE__AUTHORS);
+			authors = new EObjectWithInverseResolvingEList.ManyInverse<author>(author.class, this, PubsPackage.TITLE__AUTHORS, PubsPackage.AUTHOR__TITLES);
 		}
 		return authors;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PubsPackage.TITLE__AUTHORS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getAuthors()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**

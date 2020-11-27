@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pubs.root#getStor_id <em>Stor id</em>}</li>
  *   <li>{@link pubs.root#getPublishers <em>Publishers</em>}</li>
  *   <li>{@link pubs.root#getStores <em>Stores</em>}</li>
+ *   <li>{@link pubs.root#getAuthors <em>Authors</em>}</li>
  * </ul>
  *
  * @see pubs.PubsPackage#getroot()
@@ -93,5 +94,17 @@ public interface root extends EObject {
 	 * @generated
 	 */
 	EList<store> getStores();
+
+	/**
+	 * Returns the value of the '<em><b>Authors</b></em>' containment reference list.
+	 * The list contents are of type {@link pubs.author}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Authors</em>' containment reference list.
+	 * @see pubs.PubsPackage#getroot_Authors()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<author> getAuthors();
 
 } // root

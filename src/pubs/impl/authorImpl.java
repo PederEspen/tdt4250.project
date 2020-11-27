@@ -2,15 +2,22 @@
  */
 package pubs.impl;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import pubs.PubsPackage;
 import pubs.author;
+import pubs.title;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,6 +36,7 @@ import pubs.author;
  *   <li>{@link pubs.impl.authorImpl#getState <em>State</em>}</li>
  *   <li>{@link pubs.impl.authorImpl#getZip <em>Zip</em>}</li>
  *   <li>{@link pubs.impl.authorImpl#getContract <em>Contract</em>}</li>
+ *   <li>{@link pubs.impl.authorImpl#getTitles <em>Titles</em>}</li>
  * </ul>
  *
  * @generated
@@ -213,6 +221,16 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 	 * @ordered
 	 */
 	protected int contract = CONTRACT_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getTitles() <em>Titles</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitles()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<title> titles;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -446,6 +464,48 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 	 * @generated
 	 */
 	@Override
+	public EList<title> getTitles() {
+		if (titles == null) {
+			titles = new EObjectWithInverseResolvingEList.ManyInverse<title>(title.class, this, PubsPackage.AUTHOR__TITLES, PubsPackage.TITLE__AUTHORS);
+		}
+		return titles;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PubsPackage.AUTHOR__TITLES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getTitles()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PubsPackage.AUTHOR__TITLES:
+				return ((InternalEList<?>)getTitles()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case PubsPackage.AUTHOR__AU_LNAME:
@@ -466,6 +526,8 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 				return getZip();
 			case PubsPackage.AUTHOR__CONTRACT:
 				return getContract();
+			case PubsPackage.AUTHOR__TITLES:
+				return getTitles();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -475,6 +537,7 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -504,6 +567,10 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 				return;
 			case PubsPackage.AUTHOR__CONTRACT:
 				setContract((Integer)newValue);
+				return;
+			case PubsPackage.AUTHOR__TITLES:
+				getTitles().clear();
+				getTitles().addAll((Collection<? extends title>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -544,6 +611,9 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 			case PubsPackage.AUTHOR__CONTRACT:
 				setContract(CONTRACT_EDEFAULT);
 				return;
+			case PubsPackage.AUTHOR__TITLES:
+				getTitles().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -574,6 +644,8 @@ public class authorImpl extends MinimalEObjectImpl.Container implements author {
 				return ZIP_EDEFAULT == null ? zip != null : !ZIP_EDEFAULT.equals(zip);
 			case PubsPackage.AUTHOR__CONTRACT:
 				return contract != CONTRACT_EDEFAULT;
+			case PubsPackage.AUTHOR__TITLES:
+				return titles != null && !titles.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -103,13 +103,22 @@ public interface PubsPackage extends EPackage {
 	int ROOT__STORES = 3;
 
 	/**
+	 * The feature id for the '<em><b>Authors</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT__AUTHORS = 4;
+
+	/**
 	 * The number of structural features of the '<em>root</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_FEATURE_COUNT = 4;
+	int ROOT_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>root</em>' class.
@@ -503,7 +512,7 @@ public interface PubsPackage extends EPackage {
 	int TITLE__SALES = 12;
 
 	/**
-	 * The feature id for the '<em><b>Authors</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Authors</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -767,13 +776,22 @@ public interface PubsPackage extends EPackage {
 	int AUTHOR__CONTRACT = 8;
 
 	/**
+	 * The feature id for the '<em><b>Titles</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR__TITLES = 9;
+
+	/**
 	 * The number of structural features of the '<em>author</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AUTHOR_FEATURE_COUNT = 9;
+	int AUTHOR_FEATURE_COUNT = 10;
 
 	/**
 	 * The number of operations of the '<em>author</em>' class.
@@ -1011,6 +1029,17 @@ public interface PubsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getroot_Stores();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link pubs.root#getAuthors <em>Authors</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Authors</em>'.
+	 * @see pubs.root#getAuthors()
+	 * @see #getroot()
+	 * @generated
+	 */
+	EReference getroot_Authors();
 
 	/**
 	 * Returns the meta object for class '{@link pubs.publisher <em>publisher</em>}'.
@@ -1405,10 +1434,10 @@ public interface PubsPackage extends EPackage {
 	EReference gettitle_Sales();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link pubs.title#getAuthors <em>Authors</em>}'.
+	 * Returns the meta object for the reference list '{@link pubs.title#getAuthors <em>Authors</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Authors</em>'.
+	 * @return the meta object for the reference list '<em>Authors</em>'.
 	 * @see pubs.title#getAuthors()
 	 * @see #gettitle()
 	 * @generated
@@ -1655,6 +1684,17 @@ public interface PubsPackage extends EPackage {
 	EAttribute getauthor_Contract();
 
 	/**
+	 * Returns the meta object for the reference list '{@link pubs.author#getTitles <em>Titles</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Titles</em>'.
+	 * @see pubs.author#getTitles()
+	 * @see #getauthor()
+	 * @generated
+	 */
+	EReference getauthor_Titles();
+
+	/**
 	 * Returns the meta object for class '{@link pubs.store <em>store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1881,6 +1921,14 @@ public interface PubsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ROOT__STORES = eINSTANCE.getroot_Stores();
+
+		/**
+		 * The meta object literal for the '<em><b>Authors</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ROOT__AUTHORS = eINSTANCE.getroot_Authors();
 
 		/**
 		 * The meta object literal for the '{@link pubs.impl.publisherImpl <em>publisher</em>}' class.
@@ -2179,7 +2227,7 @@ public interface PubsPackage extends EPackage {
 		EReference TITLE__SALES = eINSTANCE.gettitle_Sales();
 
 		/**
-		 * The meta object literal for the '<em><b>Authors</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Authors</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2367,6 +2415,14 @@ public interface PubsPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AUTHOR__CONTRACT = eINSTANCE.getauthor_Contract();
+
+		/**
+		 * The meta object literal for the '<em><b>Titles</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AUTHOR__TITLES = eINSTANCE.getauthor_Titles();
 
 		/**
 		 * The meta object literal for the '{@link pubs.impl.storeImpl <em>store</em>}' class.

@@ -3,12 +3,12 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pubs" nsURI="platform:/plugin/tdt4250.project/model/pubs.ecore"
     nsPrefix="pubs">
   <eClassifiers xsi:type="ecore:EClass" name="root">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pub_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stor_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="publishers" upperBound="-1"
         eType="#//publisher" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stores" upperBound="-1"
         eType="#//store" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="authors" upperBound="-1"
+        eType="#//author" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="publisher">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pubname" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -56,7 +56,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="sales" upperBound="-1"
         eType="#//sale"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="authors" upperBound="-1"
-        eType="#//author" containment="true"/>
+        eType="#//author" eOpposite="#//author/titles"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="roysched">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -82,6 +82,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="zip" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="contract" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="titles" upperBound="-1"
+        eType="#//title" eOpposite="#//title/authors"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="store">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="stor_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

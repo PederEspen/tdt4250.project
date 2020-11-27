@@ -2,6 +2,7 @@
  */
 package pubs;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -22,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pubs.author#getState <em>State</em>}</li>
  *   <li>{@link pubs.author#getZip <em>Zip</em>}</li>
  *   <li>{@link pubs.author#getContract <em>Contract</em>}</li>
+ *   <li>{@link pubs.author#getTitles <em>Titles</em>}</li>
  * </ul>
  *
  * @see pubs.PubsPackage#getauthor()
@@ -226,5 +228,19 @@ public interface author extends EObject {
 	 * @generated
 	 */
 	void setContract(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Titles</b></em>' reference list.
+	 * The list contents are of type {@link pubs.title}.
+	 * It is bidirectional and its opposite is '{@link pubs.title#getAuthors <em>Authors</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Titles</em>' reference list.
+	 * @see pubs.PubsPackage#getauthor_Titles()
+	 * @see pubs.title#getAuthors
+	 * @model opposite="authors"
+	 * @generated
+	 */
+	EList<title> getTitles();
 
 } // author

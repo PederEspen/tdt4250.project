@@ -1,6 +1,7 @@
 package transformations;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -172,12 +173,13 @@ public class JavaMToEcoreM {
 			t.setPubdate(titles.get(i).pubdate);
 			//t.getAu_id().addAll(titles.get(i).au_ids);
 			
-			//Set Ecore object au ids.
-			System.out.println("TEST: " + titles.get(i).au_ids);
+			//Set au ids.
+			System.out.println("To ecore. titles au ids: " + titles.get(i).au_ids);
 			for(int x = 0; x < titles.get(i).au_ids.size(); x++) {
-				System.out.println("ASDASDSD " + titles.get(i).au_ids.get(x));
+				System.out.println("Title's au id nr " + x + ": " + titles.get(i).au_ids.get(x));
 				t.getAu_ids().add(titles.get(i).au_ids.get(x));
 			}
+			System.out.println("Ecore title au id?: " + t.getAu_ids());
 			
 			
 			//link titles to publishers
@@ -191,6 +193,7 @@ public class JavaMToEcoreM {
 		
 		//author
 		List<Author> authors = (List) javaObjects.get("authors");
+		List<author> ecoreAuthors = new ArrayList<author>(); // ECORE AUTHOR OBJECTS
 		for(int i = 0; i < authors.size(); i++) {
 			author a = factory.createauthor();
 			a.setAu_lname(authors.get(i).au_lname);
@@ -202,17 +205,37 @@ public class JavaMToEcoreM {
 			a.setState(authors.get(i).state);
 			a.setZip(authors.get(i).zip);
 			a.setContract(authors.get(i).contract);
+			r.getAuthors().add(a);
 			
-			for(int j = 0; j < r.getPublishers().size(); j++) { //for each publicher
-				for(int k = 0; k < r.getPublishers().get(j).getTitles().size(); k++) {
+			ecoreAuthors.add(a);
+			
+			//mapping authors to titles
+			for(int j = 0; j < r.getPublishers().size(); j++) { //for each publisher
+				publisher p = r.getPublishers().get(j);
+				for(int k = 0; k < p.getTitles().size(); k++) { //for each title
 					title t = r.getPublishers().get(j).getTitles().get(k);
 					if(t.getAu_ids().contains(a.getAu_id())) {
-						t.getAu_ids().add(a.getAu_id());
+						int before = t.getAuthors().size();
+						t.getAuthors().add(a);
+						System.out.println("ADDING AUTHOR TO TITLE... AUTHORS BEFORE: " + before + ". AFTER: " + t.getAuthors().size());
+						//From the print above, every title should have author??
 					}
 				}
 			}
 			
 		}
+		//TESTING IF AUTHORS ARE MAPPED?
+		List<title> ecoreTitles = new ArrayList<title>();
+		for(int i = 0; i < r.getPublishers().size(); i++) {
+			publisher p = r.getPublishers().get(i);
+			for(int j = 0; j < p.getTitles().size(); j++) {
+				ecoreTitles.add(p.getTitles().get(j));
+			}
+		}
+		for (int i = 0; i < ecoreTitles.size(); i++) {
+			System.out.println("title " + i + ": " + ecoreTitles.get(i).getAuthors().size());
+		}
+		
 		
 		//royched
 		List<Roysched> royscheds = (List) javaObjects.get("royscheds");
@@ -223,7 +246,6 @@ public class JavaMToEcoreM {
 			roy.setHirange(royscheds.get(i).hirange);
 			roy.setRoyalty(royscheds.get(i).royalty);
 			
-			//TODO: LINK TO TITLE
 			//loop through all publishers
 			for(int j = 0; j < r.getPublishers().size(); j++) { 
 				//loop through all titles
@@ -256,7 +278,6 @@ public class JavaMToEcoreM {
         try {
             resource.save(Collections.EMPTY_MAP);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

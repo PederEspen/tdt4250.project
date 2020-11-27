@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pubs.PubsPackage;
+import pubs.author;
 import pubs.publisher;
 import pubs.root;
 import pubs.store;
@@ -35,6 +36,7 @@ import pubs.store;
  *   <li>{@link pubs.impl.rootImpl#getStor_id <em>Stor id</em>}</li>
  *   <li>{@link pubs.impl.rootImpl#getPublishers <em>Publishers</em>}</li>
  *   <li>{@link pubs.impl.rootImpl#getStores <em>Stores</em>}</li>
+ *   <li>{@link pubs.impl.rootImpl#getAuthors <em>Authors</em>}</li>
  * </ul>
  *
  * @generated
@@ -99,6 +101,16 @@ public class rootImpl extends MinimalEObjectImpl.Container implements root {
 	 * @ordered
 	 */
 	protected EList<store> stores;
+
+	/**
+	 * The cached value of the '{@link #getAuthors() <em>Authors</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthors()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<author> authors;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -197,12 +209,27 @@ public class rootImpl extends MinimalEObjectImpl.Container implements root {
 	 * @generated
 	 */
 	@Override
+	public EList<author> getAuthors() {
+		if (authors == null) {
+			authors = new EObjectContainmentEList<author>(author.class, this, PubsPackage.ROOT__AUTHORS);
+		}
+		return authors;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case PubsPackage.ROOT__PUBLISHERS:
 				return ((InternalEList<?>)getPublishers()).basicRemove(otherEnd, msgs);
 			case PubsPackage.ROOT__STORES:
 				return ((InternalEList<?>)getStores()).basicRemove(otherEnd, msgs);
+			case PubsPackage.ROOT__AUTHORS:
+				return ((InternalEList<?>)getAuthors()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -223,6 +250,8 @@ public class rootImpl extends MinimalEObjectImpl.Container implements root {
 				return getPublishers();
 			case PubsPackage.ROOT__STORES:
 				return getStores();
+			case PubsPackage.ROOT__AUTHORS:
+				return getAuthors();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -250,6 +279,10 @@ public class rootImpl extends MinimalEObjectImpl.Container implements root {
 				getStores().clear();
 				getStores().addAll((Collection<? extends store>)newValue);
 				return;
+			case PubsPackage.ROOT__AUTHORS:
+				getAuthors().clear();
+				getAuthors().addAll((Collection<? extends author>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -274,6 +307,9 @@ public class rootImpl extends MinimalEObjectImpl.Container implements root {
 			case PubsPackage.ROOT__STORES:
 				getStores().clear();
 				return;
+			case PubsPackage.ROOT__AUTHORS:
+				getAuthors().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -294,6 +330,8 @@ public class rootImpl extends MinimalEObjectImpl.Container implements root {
 				return publishers != null && !publishers.isEmpty();
 			case PubsPackage.ROOT__STORES:
 				return stores != null && !stores.isEmpty();
+			case PubsPackage.ROOT__AUTHORS:
+				return authors != null && !authors.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

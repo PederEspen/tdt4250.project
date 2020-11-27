@@ -138,7 +138,14 @@ public class JsonToModel {
 //			}
 			
 			//Mapping authors to title
-			//DETTE FUNGERER SOM DET SKAL
+			
+			//Initialize title object's author id list
+			for(int i = 0; i < javaObjectsMap.get("titles").size(); i++) {
+				Title t = (Title) javaObjectsMap.get("titles").get(i);
+				t.au_ids = new ArrayList<String>();
+			}
+			
+			//Map the stuff
 			int titleIdMatches = 0; //For testing
 			int titleIdAuthorIdMatches = 0; //for testing
 			for(int i = 0; i < javaObjectsMap.get("titleAuthors").size(); i++) {
@@ -146,13 +153,9 @@ public class JsonToModel {
 				
 				for(int j = 0; j < javaObjectsMap.get("titles").size(); j++) {
 					Title t = (Title) javaObjectsMap.get("titles").get(j);
-					t.au_ids = new ArrayList<String>();
+					
 					if(ta.title_id.equals(t.title_id)) {
-						//System.out.println("TA titleID equal to title titleID");
 						titleIdMatches++;
-					}
-					else {
-						//System.out.println("TA titleID NOT equal to title titleID");
 					}
 					
 					for(int k = 0; k < javaObjectsMap.get("authors").size(); k++) {
@@ -163,12 +166,15 @@ public class JsonToModel {
 							t.au_ids.add(a.au_id);
 						}
 					}
-					System.out.println("Title nr " + j + " au ids: " + t.au_ids.size());
 				}
 			}
 			System.out.println("TitleIdMatches: " + titleIdMatches + " out of " + javaObjectsMap.get("titleAuthors").size() + " TA, and " + javaObjectsMap.get("titles").size() + " titles");
 			System.out.println("Number of authors: " + javaObjectsMap.get("authors").size() + ". titleIdAuthorIdMatches: " + titleIdAuthorIdMatches);
 			
+			for(int i = 0; i < javaObjectsMap.get("titles").size(); i++) {
+				Title t = (Title) javaObjectsMap.get("titles").get(i);
+				System.out.println(t.au_ids.size());
+			}
 			
 				
 			//System.out.println(javaObjectsMap);

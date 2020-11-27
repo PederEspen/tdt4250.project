@@ -7,10 +7,9 @@
   <foreignModel>pubs.ecore</foreignModel>
   <genPackages prefix="Pubs" disposableProviderFactory="true" ecorePackage="pubs.ecore#/">
     <genClasses ecoreClass="pubs.ecore#//root">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//root/pub_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//root/stor_id"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//root/publishers"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//root/stores"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pubs.ecore#//root/authors"/>
     </genClasses>
     <genClasses ecoreClass="pubs.ecore#//publisher">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//publisher/pubname"/>
@@ -77,6 +76,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/state"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/zip"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//author/contract"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pubs.ecore#//author/titles"/>
     </genClasses>
     <genClasses ecoreClass="pubs.ecore#//store">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pubs.ecore#//store/stor_name"/>
