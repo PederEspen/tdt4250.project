@@ -293,13 +293,13 @@ public interface title extends EObject {
 	EList<String> getAu_ids();
 
 	/**
-	 * Returns the value of the '<em><b>Sales</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Sales</b></em>' reference list.
 	 * The list contents are of type {@link pubs.sale}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales</em>' containment reference list.
+	 * @return the value of the '<em>Sales</em>' reference list.
 	 * @see pubs.PubsPackage#gettitle_Sales()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	EList<sale> getSales();

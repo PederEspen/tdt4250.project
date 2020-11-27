@@ -43,9 +43,6 @@ public class JavaMToEcoreM {
 		
 		PubsFactory factory = PubsFactory.eINSTANCE;
 		root r = factory.createroot();
-		r.setPub_id("test1");
-		r.setStor_id("test2");
-		//System.out.println(r);
 		
 		//for each key Value pair, for each el in value
 		for(int i = 0; i < javaObjects.size(); i++) {
@@ -250,7 +247,7 @@ public class JavaMToEcoreM {
 
         ResourceSet resSet = new ResourceSetImpl();
         
-        Resource resource = resSet.createResource(URI.createURI("../tdt4250.project/model/sample.xmi"));
+        Resource resource = resSet.createResource(URI.createURI("../tdt4250.project/model/pubs.xmi"));
         System.out.println(resource);
         
         resource.getContents().add(r);

@@ -494,7 +494,7 @@ public interface PubsPackage extends EPackage {
 	int TITLE__AU_IDS = 11;
 
 	/**
-	 * The feature id for the '<em><b>Sales</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Sales</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1394,10 +1394,10 @@ public interface PubsPackage extends EPackage {
 	EAttribute gettitle_Au_ids();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link pubs.title#getSales <em>Sales</em>}'.
+	 * Returns the meta object for the reference list '{@link pubs.title#getSales <em>Sales</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Sales</em>'.
+	 * @return the meta object for the reference list '<em>Sales</em>'.
 	 * @see pubs.title#getSales()
 	 * @see #gettitle()
 	 * @generated
@@ -2171,7 +2171,7 @@ public interface PubsPackage extends EPackage {
 		EAttribute TITLE__AU_IDS = eINSTANCE.gettitle_Au_ids();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Sales</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

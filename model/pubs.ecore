@@ -54,7 +54,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="au_ids" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sales" upperBound="-1"
-        eType="#//sale" containment="true"/>
+        eType="#//sale"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="authors" upperBound="-1"
         eType="#//author" containment="true"/>
   </eClassifiers>

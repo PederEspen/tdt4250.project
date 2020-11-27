@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pubs.PubsPackage;
@@ -273,7 +274,7 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	protected EList<String> au_ids;
 
 	/**
-	 * The cached value of the '{@link #getSales() <em>Sales</em>}' containment reference list.
+	 * The cached value of the '{@link #getSales() <em>Sales</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSales()
@@ -607,7 +608,7 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 	@Override
 	public EList<sale> getSales() {
 		if (sales == null) {
-			sales = new EObjectContainmentEList<sale>(sale.class, this, PubsPackage.TITLE__SALES);
+			sales = new EObjectResolvingEList<sale>(sale.class, this, PubsPackage.TITLE__SALES);
 		}
 		return sales;
 	}
@@ -635,8 +636,6 @@ public class titleImpl extends MinimalEObjectImpl.Container implements title {
 		switch (featureID) {
 			case PubsPackage.TITLE__ROYSCHED:
 				return basicSetRoysched(null, msgs);
-			case PubsPackage.TITLE__SALES:
-				return ((InternalEList<?>)getSales()).basicRemove(otherEnd, msgs);
 			case PubsPackage.TITLE__AUTHORS:
 				return ((InternalEList<?>)getAuthors()).basicRemove(otherEnd, msgs);
 		}
