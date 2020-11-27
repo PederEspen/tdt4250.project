@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" name="design2" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="design2" version="12.0.0.2017041100">
   <ownedViewpoints name="PubsViewPoint" modelFileExtension="xmi">
     <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="StoreTable" initialisation="true" domainClass="pubs::root">
-      <ownedLineMappings name="StoreLine" domainClass="pubs::store" headerLabelExpression="aql:self.stor_id">
+      <ownedLineMappings name="StoreLine" domainClass="pubs::store" headerLabelExpression="aql:'Store ID: ' + self.stor_id">
         <backgroundConditionalStyle predicateExpression="aql:self.sales->size() > 2">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
           </style>
         </backgroundConditionalStyle>
-        <ownedSubLines name="OrderNumber" domainClass="pubs::sale" headerLabelExpression="aql:self.ord_num">
+        <ownedSubLines name="OrderNumber" domainClass="pubs::sale" headerLabelExpression="aql:'Order number: ' + self.ord_num">
           <backgroundConditionalStyle predicateExpression="aql:self.eContainer().sales->size() > 2">
             <style>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
@@ -53,29 +53,74 @@
         </defaultBackground>
       </ownedColumnMappings>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:TreeDescription" name="Titles" domainClass="pubs::root">
-      <subItemMappings name="Title" domainClass="pubs::title" semanticCandidatesExpression="feature:eAllContents">
-        <defaultStyle labelExpression="aql:self.title + ' (' + self.pubdate .toString().last(4) + ')'">
-          <labelFormat>bold</labelFormat>
-          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-        </defaultStyle>
-      </subItemMappings>
-    </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:TreeDescription" name="Publishers" domainClass="pubs::root">
-      <subItemMappings name="Publisher" domainClass="pubs::publisher" semanticCandidatesExpression="feature:eAllContents">
+    <ownedRepresentations xsi:type="description_2:TreeDescription" name="PublisherEmployeeTree" domainClass="pubs::root">
+      <subItemMappings name="PublisherItem" domainClass="pubs::publisher" semanticCandidatesExpression="feature:eAllContents">
         <defaultStyle labelSize="12" labelExpression="aql: self.pubname">
           <labelFormat>bold</labelFormat>
           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
         </defaultStyle>
-        <subItemMappings name="Employees" domainClass="pubs::employee" semanticCandidatesExpression="feature:eAllContents">
+        <subItemMappings name="EmployeesItem" domainClass="pubs::employee" semanticCandidatesExpression="feature:eAllContents">
           <defaultStyle labelExpression="aql: self.job_desc + ': ' + self.lname + ', ' + self.fname + ' (' +  self.emp_id + ')'">
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </defaultStyle>
         </subItemMappings>
       </subItemMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:CrossTableDescription" name="TitleAuthorCrossTable" domainClass="pubs::root">
+      <ownedLineMappings name="TitleLine" domainClass="pubs::title" headerLabelExpression="aql:self.title">
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+        </defaultBackground>
+      </ownedLineMappings>
+      <ownedColumnMappings name="AuthorColumn" headerLabelExpression="aql:self.au_lname" domainClass="pubs::author"/>
+      <intersection name="TitleAuthorIntersection" lineMapping="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='TitleAuthorCrossTable']/@ownedLineMappings[name='TitleLine']" columnMapping="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='TitleAuthorCrossTable']/@ownedColumnMappings.0" labelExpression="          X" columnFinderExpression="aql: self.authors"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_3:DiagramDescription" name="TitleDiagram" domainClass="pubs::title" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="TitleNode" semanticCandidatesExpression="aql: self" domainClass="pubs::title">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql: 'Title: ' + self.title +'\nAuthors: ' + self.authors.au_lname + '\nPrice: ' + self.price + '$\nSales: ' + self.ytd_sales" labelPosition="node" resizeKind="NSEW" width="35" height="15">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </nodeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_3:DiagramDescription" name="PublisherDiagram" domainClass="pubs::publisher" enablePopupBars="true">
+      <filters xsi:type="filter:CompositeFilterDescription" name="OnlyHavingTitlesFilter">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@additionalLayers[name='Publishers']/@containerMappings[name='PublisherContainer']" semanticConditionExpression="aql: self.titles->size() > 0"/>
+        <filters xsi:type="filter:MappingFilter" filterKind="COLLAPSE"/>
+      </filters>
+      <defaultLayer name="Default">
+        <toolSections>
+          <ownedTools xsi:type="tool:DoubleClickDescription" mappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@additionalLayers[name='Publishers']/@containerMappings[name='PublisherContainer']/@subNodeMappings[name='TitleNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='TitleDiagram']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="Publishers" activeByDefault="true">
+        <containerMappings name="PublisherContainer" domainClass="pubs::publisher" childrenPresentation="List">
+          <subNodeMappings name="TitleNode" semanticCandidatesExpression="feature:eAllContents" doubleClickDescription="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="pubs::title">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: self.title" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="feature:pubname" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </containerMappings>
+      </additionalLayers>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="tdt4250.project.design2.Services"/>
   </ownedViewpoints>

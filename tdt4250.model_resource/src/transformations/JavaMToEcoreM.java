@@ -444,6 +444,7 @@ public class JavaMToEcoreM {
 
         try {
             resource.save(Collections.EMPTY_MAP);
+            System.out.println("Successfully created an XMI file in /tdt4250.model_resource/model/");
         } catch (IOException e) {
             e.printStackTrace();
         }
