@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" name="design2" version="12.0.0.2017041100">
+  <ownedViewpoints name="PubsViewPoint" modelFileExtension="xmi">
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="StoreTable" initialisation="true" domainClass="pubs::root">
+      <ownedLineMappings name="StoreLine" domainClass="pubs::store" headerLabelExpression="aql:self.stor_id">
+        <backgroundConditionalStyle predicateExpression="aql:self.sales->size() > 2">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <ownedSubLines name="OrderNumber" domainClass="pubs::sale" headerLabelExpression="aql:self.ord_num">
+          <backgroundConditionalStyle predicateExpression="aql:self.eContainer().sales->size() > 2">
+            <style>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </backgroundConditionalStyle>
+        </ownedSubLines>
+      </ownedLineMappings>
+      <ownedColumnMappings name="Store Name" headerLabelExpression="Store Name" featureName="stor_name">
+        <defaultForeground labelSize="9">
+          <labelFormat>bold</labelFormat>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="Address" headerLabelExpression="Address" featureName="stor_address">
+        <defaultForeground labelSize="9">
+          <labelFormat>bold</labelFormat>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="City" headerLabelExpression="City" featureName="city">
+        <defaultForeground labelSize="9">
+          <labelFormat>bold</labelFormat>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="Zip" headerLabelExpression="Zip Code" featureName="zip">
+        <defaultForeground labelSize="9">
+          <labelFormat>bold</labelFormat>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="tdt4250.project.design2.Services"/>
+  </ownedViewpoints>
+</description:Group>

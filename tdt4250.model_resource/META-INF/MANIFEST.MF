@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: tdt4250.project;singleton:=true
+Bundle-SymbolicName: tdt4250.model_resource;singleton:=true
 Automatic-Module-Name: tdt4250.project
 Bundle-Version: 0.1.0.qualifier
 Bundle-ClassPath: .
