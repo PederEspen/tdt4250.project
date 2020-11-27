@@ -34,28 +34,7 @@ public class JsonToModel {
 	
 	public static HashMap mapJsonToObjects() {
 		
-		//for each json file in data folder
-		//map it to java objects
-		
 		ObjectMapper objectMapper = new ObjectMapper();
-		
-		String jsonTest = "{\"au_id\" : \"172-32-1176\",\"au_lname\" : \"White\",\"au_fname\" : \"Johnson\",\"phone\" : \"408 496-7223\",\"address\" : \"10932 Bigge Rd.\",\"city\" : \"Menlo Park\",\"state\" : \"CA\",\"zip\" : \"94025\",\"contract\" : 1}";
-		
-		//TESTING
-		try {
-			Author test = objectMapper.readValue(jsonTest, Author.class);
-			System.out.println(test.au_id);
-		} catch (JsonParseException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (JsonMappingException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		
 		
 		File authorFile = new File("data/pubsJSON/authors.json");
 		File discountFile = new File("data/pubsJSON/discounts.json");
@@ -71,20 +50,7 @@ public class JsonToModel {
 
 		
 		HashMap<String, List> javaObjectsMap = new HashMap();
-		//Mapping authors
-		try {
-			
-//			List<Author> authorObjects = objectMapper.readValue(authorFile, new TypeReference<List<Author>>(){});
-//			List<Discount> discountObjects = objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){});
-//			List<Employee> employeeObjects = objectMapper.readValue(employeeFile, new TypeReference<List<Employee>>(){});
-//			List<Jobs> jobObjects = objectMapper.readValue(jobFile, new TypeReference<List<Jobs>>(){});
-//			List<Pub_info> pubInfoObjects = objectMapper.readValue(pubInfoFile, new TypeReference<List<Pub_info>>(){});
-//			List<Publisher> publisherObjects = objectMapper.readValue(publisherFile, new TypeReference<List<Publisher>>(){});
-//			List<Roysched> royschedObjects = objectMapper.readValue(royschedFile, new TypeReference<List<Roysched>>(){});
-//			List<Sale> saleObjects = objectMapper.readValue(saleFile, new TypeReference<List<Sale>>(){});
-//			List<Store> storeObjects = objectMapper.readValue(storeFile, new TypeReference<List<Store>>(){});
-//			List<Title> titleObjects = objectMapper.readValue(titleFile, new TypeReference<List<Title>>(){});
-			
+		try {	
 				
 			javaObjectsMap.put("authors", (objectMapper.readValue(authorFile, new TypeReference<List<Author>>(){})));
 			javaObjectsMap.put("discounts", (objectMapper.readValue(discountFile, new TypeReference<List<Discount>>(){})));
@@ -110,32 +76,6 @@ public class JsonToModel {
 				}
 			}
 			
-			//Mapping authors to title
-//			int count = 0;
-//			for(int i = 0; i < javaObjectsMap.get("titleAuthors").size(); i++) {
-//				TitleAuthor ta = (TitleAuthor) javaObjectsMap.get("titleAuthors").get(i);
-//				for(int j = 0; j < javaObjectsMap.get("titles").size(); j++) {
-//					Title t = (Title) javaObjectsMap.get("titles").get(j);
-//					t.au_ids = new ArrayList<String>();
-//					//System.out.println("JAVA OBJECT AU SIZE BEFORE ADDING: " + t.au_ids.size());
-//					for(int k = 0; k < javaObjectsMap.get("authors").size(); k++) {
-//						Author a = (Author) javaObjectsMap.get("authors").get(k);
-//						
-////						System.out.println("titleauthor: " + ta.title_id +" " +ta.au_id);
-////						System.out.println("author: " + a.au_id);
-////						System.out.println("title: " + t.title_id);
-//						if(ta.au_id.equals(a.au_id) && ta.title_id.equals(t.title_id)) {
-//							//add author to the title's author id list
-//							//System.out.println("MATCH " + a.au_id);
-//							t.au_ids.add(a.au_id);
-//						}
-//						//System.out.println(count);
-//						count++;
-//					}
-//					//System.out.println("JAVA OBJECT AU SIZE AFTER ADDING: " + t.au_ids.size());
-//					//System.out.println("combinations: " + javaObjectsMap.get("titleAuthors").size()*javaObjectsMap.get("titles").size()*javaObjectsMap.get("authors").size());
-//				}
-//			}
 			
 			//Mapping authors to title
 			
@@ -145,42 +85,25 @@ public class JsonToModel {
 				t.au_ids = new ArrayList<String>();
 			}
 			
-			//Map the stuff
-			int titleIdMatches = 0; //For testing
-			int titleIdAuthorIdMatches = 0; //for testing
 			for(int i = 0; i < javaObjectsMap.get("titleAuthors").size(); i++) {
-				TitleAuthor ta = (TitleAuthor) javaObjectsMap.get("titleAuthors").get(i);
 				
+				TitleAuthor ta = (TitleAuthor) javaObjectsMap.get("titleAuthors").get(i);
 				for(int j = 0; j < javaObjectsMap.get("titles").size(); j++) {
+					
 					Title t = (Title) javaObjectsMap.get("titles").get(j);
-					
-					if(ta.title_id.equals(t.title_id)) {
-						titleIdMatches++;
-					}
-					
 					for(int k = 0; k < javaObjectsMap.get("authors").size(); k++) {
 						Author a = (Author) javaObjectsMap.get("authors").get(k);
 						
 						if(ta.au_id.equals(a.au_id) && ta.title_id.equals(t.title_id)) {
-							titleIdAuthorIdMatches++;
 							t.au_ids.add(a.au_id);
 						}
 					}
 				}
 			}
-			System.out.println("TitleIdMatches: " + titleIdMatches + " out of " + javaObjectsMap.get("titleAuthors").size() + " TA, and " + javaObjectsMap.get("titles").size() + " titles");
-			System.out.println("Number of authors: " + javaObjectsMap.get("authors").size() + ". titleIdAuthorIdMatches: " + titleIdAuthorIdMatches);
-			
-			for(int i = 0; i < javaObjectsMap.get("titles").size(); i++) {
-				Title t = (Title) javaObjectsMap.get("titles").get(i);
-				System.out.println(t.au_ids.size());
-			}
 			
 				
 			//System.out.println(javaObjectsMap);
 			
-			
-			//System.out.println(authorObjects.get(0)); //calls toString
 		} catch (JsonParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
