@@ -49,7 +49,7 @@ One thing we had to consider was that there is no single root of the dataset. Pu
 
 ## Viewer
 
-For this project we decided to make different views for visualizing the different data. We decided to explore the different kinds of tools for displaying the view in this project, and therefore ended up making diagrams, tables, cross-tables and trees. 
+For this project we decided to make different views for visualizing the different data. We explored different kinds of tools for displaying the view in this project, and therefore ended up making diagrams, tables, cross-tables and trees. 
 
 ### Diagram
 
@@ -57,11 +57,13 @@ We created two diagrams for this project. One visualizing all publishers and one
 
 ![](Images/PublisherDiagramExample.png)
 
-The publisher diagram shows the different publishers and the titles within the publishers. In the picture above we only show two diagrams and that is because we added a filter that filters out the publishers that do not have any titles within. There are actually three publishers total with titles in them, but when visualizing the diagrams they were too spaced and therefore would have taken much space in the documentation. 
+The publisher diagram shows the different publishers and the titles within the publishers. In the picture above we only show two diagrams and that is because we added a filter that filters out the publishers that do not have any titles within.
 
 We added navigation to the project, making it possible to click on a title in the publisher diagram, which then navigates to a title diagram as depicted in the picture below. When double-clicking on a title you create a new title diagram. 
 
 ![](Images/TitleDiagramExample.png) 
+
+For the title diagram we show the title of the book, what author(s), the price and how many that has bought the book. 
 
 ### Table
 
