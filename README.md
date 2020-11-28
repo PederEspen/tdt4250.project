@@ -56,9 +56,7 @@ The publisher diagram shows the different publishers and the titles within the p
 
 We added navigation to the project, making it possible to click on a title in the publisher diagram, which then navigates to a title diagram as depicted in the picture below. When double-clicking on a title you create a new title diagram. 
 
-![](Images/TitleDiagramExample.png)
-
-We decided to make this diagram simple, and therefore only displaying the title of the book. 
+![](Images/TitleDiagramExample.png) 
 
 ### Table
 
