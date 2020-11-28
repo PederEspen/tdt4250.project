@@ -444,7 +444,8 @@ public class JavaMToEcoreM {
 
         try {
             resource.save(Collections.EMPTY_MAP);
-            System.out.println("Successfully created an XMI file in /tdt4250.model_resource/model/");
+            System.out.println("Successfully created an XMI file in /tdt4250.model_resource/model/. "
+            		+ "\nPlease refresh this folder in Eclipse to show the file properly.");
         } catch (IOException e) {
             e.printStackTrace();
         }
