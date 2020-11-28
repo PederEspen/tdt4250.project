@@ -67,8 +67,7 @@ For the title diagram we show the title of the book, what author(s), the price a
 
 ### Table
 
-For visualizing the different stores in this project we used a table. As you can see in the picture below, we first visualize all stores in the database and then we the different orders a store currenctly have. 
-
+For visualizing the different stores in this project table is used. The picture below visualizes all stores in the database and the different sales (as orders).
 ![](Images/TableExample.png)
 
 For this table we included a conditional style which changes the color of the table if the number of orders within a store is greater then two. As you can see in the picture above, the first two stores has a grey color since they only have two orders, whereas the remaining four stores has a blue color.
