@@ -1,44 +1,49 @@
 # tdt4250.project
 
-## Requirements
-The plugins used for this project is:
+### Requirements
+The dependencies used for this project is:
 
 * Ecore and Ecore Modeling Framework
 
 * Sirius for visualization
 
 * Jackson library for creating java objects from JSON strings
+    * We use jackson-annotations, jackson-core and jackson-databind, all versions 2.6.2. We recommend using the same versions to avoid conflicts etc. Can be installed from http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository
 
-## Setup 
+### Setup 
 
 * Clone the repo: ``` git clone https://github.com/PederEspen/tdt4250.project.git ```
+* Add the three project folders (.model_resource, .project.design and .project.examples) to your Eclipse workspace
+* In order to create the .xmi file, navigate to **tdt4250.model_resource/src/transformations** and run the **JsonToModel.java** file as a Java Application
+* Refresh the **/model** folder in order for the .xmi file to appear in the system
 
-* Install Jackson
+#### View and edit data
 
-  * Navigate to "Install new software" in Eclipse
-  * Click "Add..." to add Orbit repository
-  * Insert "http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository" in location
-  * Click "Add"
-  * Choose "All Bundles" and check "Jackson-annotations", "Jackson-core" and "jackson-databind"
-  * Click "Next" and then "Finish"
+* Navigate to **tdt4250.design/description/** and open the **design.odesign** file. This file can be used to view how the different diagrams are set up
+* In order to view the actual diagrams, navigate to **tdt4250.examples/** and open the **representations.aird** file. The .xmi file should already be added as a dependency, but if it isnt just add it manually from the model folder.
+* Expand the different diagrams under PubsViewPoint and double click on the first element under each diagram to view them (alternatively you can create new ones).
 
+### Fetch from API and transform from JSON to Java objects
 
-
-## Fetch from API and transform from JSON to Java objects
-
-The fetching is handled in the tdt4250.project project, inside /src/transformation/JSONtoModel.java file.
+The fetching is handled in the tdt4250.model_resource, inside /src/transformation/JSONtoModel.java file.
 Here the data is saved to JSON files that we later use to create java classes. This is done by importing the Jackson library, which allows for converting JSON files to java objects.
 
-The JavaMToEcoreM.java file creates a XMI file that we use together 
-with Sirius to create the visualization of viewer and editor. This is done by using a custom model to 
-model transformation. 
+The JavaMToEcoreM.java file creates a XMI file via a M2M (Model-To-Model) transformation. This XMI file can then be used by the other projects to create, edit and view different diagrams which display the dataset structure and contents.
 
-## Model
+### Model
 
-We had to add a UML class to the model since the original model had several "root" classes. 
-When creating the XMI file we wanted to have a root class that points to the original "root" 
-classes so that we only had to create one XMI file for the model, instead of having several XMI files for the model. 
-We also made several changes to the original model like removing UML classes that we didn't have to use for this project. (dæh dårlig engelsk)
+We chose a publically available dataset from the relational database. (Link: https://relational.fit.cvut.cz/dataset/Pubs)
+The dataset contains a variety of information about book publishers, for example:
+* Several different publishers
+* Titles that they have published
+* Authors which have written the books
+* Stores which have bought certain amounts of said titles
+* Employees working for the publishers
+The below image shows the structure of the dataset (taken from https://relational.fit.cvut.cz/assets/img/datasets-generated/pubs.svg):
+
+![](Images/Dataset.svg)
+
+One thing we had to consider was that there is no single root of the dataset. Publishers, Authors, Stores and Jobs all exist independently. Because XML is naturally hierarchical and prefers having a single root, we chose to add an empty root object which contained links to Publishers, Authors and Stores. We also chose to remove the TitleAuthor link from the dataset, and instead linked Titles and Authors directly using EOpposite. Lastly, we chose to not include the "jobs" table as the only relevant information it contained was the posistions of the employees, which was instead implemented directly in the Employee class. The below image shows the final ecore model:
 
 ![](Images/Model.png)
 
