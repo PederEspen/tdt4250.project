@@ -1,4 +1,4 @@
-package tdt4250.project.design2;
+package tdt4250.project.design;
 
 import org.eclipse.emf.ecore.EObject;
 

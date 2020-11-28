@@ -2,7 +2,7 @@
 <?eclipse version="3.0"?>
 <plugin>
   <extension point="org.eclipse.sirius.componentization">
-    <component class="tdt4250.project.design2.Activator"
+    <component class="tdt4250.project.design.Activator"
                id="tdt4250.project.design2"
 	       name="design2">
     </component>

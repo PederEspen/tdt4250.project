@@ -1,4 +1,4 @@
-package tdt4250.project.design2;
+package tdt4250.project.design;
 
 import java.util.HashSet;
 import java.util.Set;
