@@ -2,7 +2,7 @@
 
 ## Contributors
 This project was made by:
-* Markus Hauge
+* Marcus Hauge
 * Eskild Brobak
 * Nikolai Mork
 * Peder Espen
