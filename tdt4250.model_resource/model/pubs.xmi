@@ -46,7 +46,7 @@
     <employees lname="Accorti" fname="Paolo" emp_id="PMA42628M" minit="M" job_id="13" job_lvl="35" pub_id="0877" hire_date="1992-08-27T00:00:00.000+0200" job_desc="Sales Representative"/>
     <employees lname="Henriot" fname="Paul" emp_id="PXH22250M" minit="X" job_id="5" job_lvl="159" pub_id="0877" hire_date="1993-08-19T00:00:00.000+0200" job_desc="Publisher"/>
     <employees lname="Ashworth" fname="Victoria" emp_id="VPA30890F" minit="P" job_id="6" job_lvl="140" pub_id="0877" hire_date="1990-09-13T00:00:00.000+0200" job_desc="Managing Editor"/>
-    <titles title_id="MC2222" title="Silicon Valley Gastronomic Treats" type="mod_cook" pub_id="0877" price="19.99" royalty="12" ytd_sales="2032" notes="Favorite recipes for quick, easy, and elegant meals." pubdate="1991-06-09T00:00:00.000+0200" authors="//@authors.13">
+    <titles title_id="MC2222" title="Silicon Valley Gastronomic Treats" type="mod_cook" pub_id="0877" price="19.99" royalty="12" ytd_sales="2032" notes="Favorite recipes for quick, easy, and elegant meals." pubdate="1991-06-09T00:00:00.000+0200" authors="//@authors.13 //@authors.2">
       <roysched title_id="MC2222" lorange="20001" hirange="50000" royalty="20"/>
       <au_ids>712-45-1867</au_ids>
     </titles>
@@ -181,7 +181,7 @@
   </stores>
   <authors au_lname="White" au_fname="Johnson" au_id="172-32-1176" phone="408 496-7223" address="10932 Bigge Rd." city="Menlo Park" state="CA" zip="94025" contract="1" titles="//@publishers.0/@titles.3"/>
   <authors au_lname="Green" au_fname="Marjorie" au_id="213-46-8915" phone="415 986-7020" address="309 63rd St. #411" city="Oakland" state="CA" zip="94618" contract="1" titles="//@publishers.0/@titles.0 //@publishers.2/@titles.0"/>
-  <authors au_lname="Carson" au_fname="Cheryl" au_id="238-95-7766" phone="415 548-7723" address="589 Darwin Ln." city="Berkeley" state="CA" zip="94705" contract="1" titles="//@publishers.2/@titles.3"/>
+  <authors au_lname="Carson" au_fname="Cheryl" au_id="238-95-7766" phone="415 548-7723" address="589 Darwin Ln." city="Berkeley" state="CA" zip="94705" contract="1" titles="//@publishers.2/@titles.3 //@publishers.1/@titles.0"/>
   <authors au_lname="O'Leary" au_fname="Michael" au_id="267-41-2394" phone="408 286-2428" address="22 Cleveland Av. #14" city="San Jose" state="CA" zip="95128" contract="1" titles="//@publishers.1/@titles.6 //@publishers.2/@titles.1"/>
   <authors au_lname="Straight" au_fname="Dean" au_id="274-80-9391" phone="415 834-2919" address="5420 College Av." city="Oakland" state="CA" zip="94609" contract="1" titles="//@publishers.2/@titles.2"/>
   <authors au_lname="Smith" au_fname="Meander" au_id="341-22-1782" phone="913 843-0462" address="10 Mississippi Dr." city="Lawrence" state="KS" zip="66044"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="design2" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="design2" version="12.0.0.2017041100">
   <ownedViewpoints name="PubsViewPoint" modelFileExtension="xmi">
     <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="StoreTable" initialisation="true" domainClass="pubs::root">
       <ownedLineMappings name="StoreLine" domainClass="pubs::store" headerLabelExpression="aql:'Store ID: ' + self.stor_id">
@@ -53,6 +53,57 @@
         </defaultBackground>
       </ownedColumnMappings>
     </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="AuthorTable" domainClass="pubs::root">
+      <ownedLineMappings name="AuthorLine" domainClass="pubs::author"/>
+      <ownedCreateLine name="CreateAuthor" mapping="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='AuthorTable']/@ownedLineMappings[name='AuthorLine']">
+        <variables name="root" documentation="The semantic root element of the table."/>
+        <variables name="element" documentation="The semantic currently edited element."/>
+        <variables name="container" documentation="The semantic element corresponding to the view container."/>
+        <firstModelOperation xsi:type="tool:CreateInstance" typeName="pubs::author" referenceName="authors">
+          <subModelOperations xsi:type="tool:SetValue" featureName="au_lname" valueExpression="aql: 'new Author'"/>
+        </firstModelOperation>
+      </ownedCreateLine>
+      <ownedColumnMappings name="AuthorLastName" headerLabelExpression="LastName" featureName="au_lname">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="AuthorFirstName" headerLabelExpression="FirstName" featureName="au_fname">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="AuthorPhoneNo" headerLabelExpression="PhoneNumber" featureName="phone">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="AuthorAddress" headerLabelExpression="Address" featureName="address">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="AuthorContract" headerLabelExpression="Contract" featureName="contract">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+    </ownedRepresentations>
     <ownedRepresentations xsi:type="description_2:TreeDescription" name="PublisherEmployeeTree" domainClass="pubs::root">
       <subItemMappings name="PublisherItem" domainClass="pubs::publisher" semanticCandidatesExpression="feature:eAllContents">
         <defaultStyle labelSize="12" labelExpression="aql: self.pubname">
@@ -88,23 +139,12 @@
         </nodeMappings>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_3:DiagramDescription" name="PublisherDiagram" domainClass="pubs::publisher" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_3:DiagramDescription" name="PublisherDiagram" domainClass="pubs::root" enablePopupBars="true">
       <filters xsi:type="filter:CompositeFilterDescription" name="OnlyHavingTitlesFilter">
-        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@additionalLayers[name='Publishers']/@containerMappings[name='PublisherContainer']" semanticConditionExpression="aql: self.titles->size() > 0"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@defaultLayer/@containerMappings[name='PublisherContainer']" semanticConditionExpression="aql: self.titles->size() > 0"/>
         <filters xsi:type="filter:MappingFilter" filterKind="COLLAPSE"/>
       </filters>
       <defaultLayer name="Default">
-        <toolSections>
-          <ownedTools xsi:type="tool:DoubleClickDescription" mappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@additionalLayers[name='Publishers']/@containerMappings[name='PublisherContainer']/@subNodeMappings[name='TitleNode']">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='TitleDiagram']"/>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
-      </defaultLayer>
-      <additionalLayers name="Publishers" activeByDefault="true">
         <containerMappings name="PublisherContainer" domainClass="pubs::publisher" childrenPresentation="List">
           <subNodeMappings name="TitleNode" semanticCandidatesExpression="feature:eAllContents" doubleClickDescription="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='']" domainClass="pubs::title">
             <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: self.title" labelPosition="node" resizeKind="NSEW">
@@ -120,7 +160,37 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
           </style>
         </containerMappings>
-      </additionalLayers>
+        <toolSections name="Navigation">
+          <ownedTools xsi:type="tool_1:DoubleClickDescription" mappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@defaultLayer/@containerMappings[name='PublisherContainer']/@subNodeMappings[name='TitleNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='TitleDiagram']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="CreationTools">
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Publisher" containerMappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@defaultLayer/@containerMappings[name='PublisherContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:CreateInstance" typeName="pubs::publisher" referenceName="publishers">
+                <subModelOperations xsi:type="tool:SetValue" featureName="pubname" valueExpression="aql: 'Insert publisher name here'"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="Title" nodeMappings="//@ownedViewpoints[name='PubsViewPoint']/@ownedRepresentations[name='PublisherDiagram']/@defaultLayer/@containerMappings[name='PublisherContainer']/@subNodeMappings[name='TitleNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:CreateInstance" typeName="pubs::title" referenceName="titles">
+                <subModelOperations xsi:type="tool:SetValue" featureName="title" valueExpression="aql: 'Insert title here'"/>
+                <subModelOperations xsi:type="tool:SetValue" featureName="pub_id" valueExpression="aql: self.eContainer().pub_id"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="tdt4250.project.design2.Services"/>
   </ownedViewpoints>
