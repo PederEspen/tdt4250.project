@@ -1,4 +1,11 @@
-# tdt4250.project
+# TDT4250 Project 2020
+
+## Contributors
+This project was made by:
+* Markus Hauge
+* Eskild Brobak
+* Nikolai Mork
+* Peder Espen
 
 ### Requirements
 The dependencies used for this project is:
@@ -67,12 +74,16 @@ We added navigation to the project, making it possible to click on a title in th
 
 For the title diagram we show the title of the book, what author(s), the price and how many that has bought the book. 
 
-### Table
+### Tables
 
 For visualizing the different stores in this project table is used. The picture below visualizes all stores in the database and the different sales (as orders).
 ![](Images/TableExample.png)
 
 For this table we included a conditional style which changes the color of the table if the number of orders within a store is greater then two. As you can see in the picture above, the first two stores has a grey color since they only have two orders, whereas the remaining four stores has a blue color.
+
+We created one more table, the AuthorTable. This shows a list of all the authors and some of their properties.
+
+![](Images/AuthorTable.png)
 
 ### Tree
 
@@ -94,16 +105,16 @@ Editing the contents of the .xmi file can simply be done by clicking on a specif
 
 We also added a few ways of creating new objects in the .xmi file via the diagrams. The **Publisher**-diagram allows creating new Publishers, as well as adding titles to said publishers. The following gif shows how this is done.
 
-GIF
+![](Images/CreatePublisherTitle.gif)
 
 The title-tool has to be applied to the header of a specific Publisher. Notice that the pub_id is automatically set for said Title.
 
 You can also create new authors via the **AuthorTable**. The following gif shows how:
 
-GIF
+![](Images/CreateAuthor.gif)
 
 Lastly, a title's properties contains a way to add or remove authors associated with said title (the same goes for the authors properties).
 
-GIF
+![](Images/AddTitleAuthor.gif)
 
 
