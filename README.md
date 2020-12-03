@@ -32,12 +32,12 @@ The dependencies used for this project is:
    * Click "enable" to enable the viewpoint.
 * Expand the different diagrams under PubsViewPoint and double click on the diagram you want to create. Select the appropriate semantic element (usually "root") and click "finish" to create the new element (the name does not matter). The diagram should then open.
 
-### Fetch from API and transform from JSON to Java objects
+### Fetching and transforming data
 
-The fetching is handled in the tdt4250.model_resource, inside /src/transformation/JSONtoModel.java file.
-Here the data is saved to JSON files that we later use to create java classes. This is done by importing the Jackson library, which allows for converting JSON files to java objects.
-
-The JavaMToEcoreM.java file creates a XMI file via a M2M (Model-To-Model) transformation. This XMI file can then be used by the other projects to create, edit and view different diagrams which display the dataset structure and contents.
+This is handled in the tdt4250.model_resource, inside the **/src/transformation/JSONtoModel.java** file.
+The data is first transformed from JSON files to java object instances, using the objectmapper from the Jackson library.
+Then, in **/src/transformation/JavaMToEcoreM.java**, the factory for the ecore model is used to transform the java object instances into an ecore intance model, an XMI file which will be generated in **/model**.
+This XMI file can then be used by the other projects to create, edit and view different diagrams which display the dataset structure and contents.
 
 ### Model
 
