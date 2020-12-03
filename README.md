@@ -14,14 +14,16 @@ The dependencies used for this project is:
 
 * Clone the repo: ``` git clone https://github.com/PederEspen/tdt4250.project.git ```
 * Add the three project folders (.model_resource, .project.design and .project.examples) to your Eclipse workspace
-* In order to create the .xmi file, navigate to **tdt4250.model_resource/src/transformations** and run the **JsonToModel.java** file as a Java Application
-* Refresh the **/model** folder in order for the .xmi file to appear in the system
+* There should already be an xmi-file in the **/model_resource/src/model** folder. In order to update it or create a new one, navigate to **tdt4250.model_resource/src/transformations** and run the **JsonToModel.java** file as a Java Application
+* Refresh the **/model** folder in order for the .xmi file to appear in the system.
 
 #### View and edit data
 
 * Navigate to **tdt4250.design/description/** and open the **design.odesign** file. This file can be used to view how the different diagrams are set up
-* In order to view the actual diagrams, navigate to **tdt4250.examples/** and open the **representations.aird** file. The .xmi file should already be added as a dependency, but if it isnt just add it manually from the model folder.
-* Expand the different diagrams under PubsViewPoint and double click on the first element under each diagram to view them (alternatively you can create new ones).
+* In order to view the actual diagrams, navigate to **tdt4250.examples/** and open the **representations.aird** file. 
+   * You need to add the pubs.xmi file as a dependency. This can be done by clicking the "add" button under the "models" tab, selecting "browse workspace" and navigate to the file. After this the .xmi diagram should appear under **Models** and some diagrams should appear under **Representations.**
+   * Click "enable" to enable the viewpoint.
+* Expand the different diagrams under PubsViewPoint and double click on the diagram you want to create. Select the appropriate semantic element (usually "root") and click "finish" to create the new element. The name does not matter. The diagram should then open.
 
 ### Fetch from API and transform from JSON to Java objects
 
@@ -85,5 +87,23 @@ In the picture you see different publishers, their employees and the employees' 
 The last feature we made was a cross-table view. As seen in the picture below, each line in this table represents different titltes and the columns represent different authors. The cross-table view then tells us which author that is connected to what title and is represented with an "X". 
 
 ![](Images/CrossTableExample.png)
+
+## Editing/Creating with the Diagrams
+
+Editing the contents of the .xmi file can simply be done by clicking on a specific element on a diagram and viewing its properties. If you change a property and save the diagram, these changes will be applied to the .xmi file. 
+
+We also added a few ways of creating new objects in the .xmi file via the diagrams. The **Publisher**-diagram allows creating new Publishers, as well as adding titles to said publishers. The following gif shows how this is done.
+
+GIF
+
+The title-tool has to be applied to the header of a specific Publisher. Notice that the pub_id is automatically set for said Title.
+
+You can also create new authors via the **AuthorTable**. The following gif shows how:
+
+GIF
+
+Lastly, a title's properties contains a way to add or remove authors associated with said title (the same goes for the authors properties).
+
+GIF
 
 
