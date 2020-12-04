@@ -214,7 +214,6 @@ public class JavaMToEcoreM {
 				for(int k = 0; k < r.getPublishers().get(j).getTitles().size(); k++) {
 					title t = r.getPublishers().get(j).getTitles().get(k);
 					//if the id matches, set the roysched
-					//System.out.println("Title ID: " + t.getTitle_id() + " - " + "Roy ID: " + roy.getTitle_id());
 					if(t.getTitle_id().equals(roy.getTitle_id())) {
 						t.setRoysched(roy);
 					}
@@ -235,18 +234,11 @@ public class JavaMToEcoreM {
 		transformPubInfo(r, factory, (List) javaObjects.get("pubInfos"));
 		transformEmployee(r, factory, (List) javaObjects.get("employees"));
 		transformStore(r, factory, (List) javaObjects.get("stores"));
-		transformDiscount(r, factory, (List) javaObjects.get("discounts"))
+		transformDiscount(r, factory, (List) javaObjects.get("discounts"));
 		transformSale(r, factory, (List) javaObjects.get("sales"));
 		transformTitle(r, factory, (List) javaObjects.get("titles"));
 		transformAuthor(r, factory, (List) javaObjects.get("authors"));
 		transformRoysched(r, factory, (List) javaObjects.get("royscheds"));
-	
-		//Prints
-		System.out.println("*****ECORE OBJECTS PRINTS*****");
-		System.out.println("Publishers: " + r.getPublishers());
-		System.out.println("Authors: " + r.getAuthors());
-		System.out.println("Stores: " + r.getStores());
-		System.out.println("*****ECORE OBJECTS PRINTS END*****");
 		
 		
 		Resource.Factory.Registry registry = Resource.Factory.Registry.INSTANCE;
